@@ -299,6 +299,7 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
         File rootPath = new File(Environment.getExternalStorageDirectory(), "LegalDesire");
         if (!rootPath.exists()) {
             rootPath.mkdirs();
+            
         }
 
         final File localFile = new File(rootPath, fileName.get(position));
