@@ -196,9 +196,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -252,6 +249,8 @@ public class MainActivity extends AppCompatActivity
             signOut();
         } else if (id == R.id.chat_module) {
             fragmentTransaction.replace(R.id.fragment_container, new Chat_Module()).commit();
+        } else if (id == R.id.upgrade_user) {
+            fragmentTransaction.replace(R.id.fragment_container, new UpgradeUser()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -268,7 +267,7 @@ public class MainActivity extends AppCompatActivity
                 new ResultCallback<Status>() {
                     @Override
                     public void onResult(@NonNull Status status) {
-                  //      Toast.makeText(MainActivity.this, "Sign Out Successfully", Toast.LENGTH_SHORT).show();
+                        //      Toast.makeText(MainActivity.this, "Sign Out Successfully", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

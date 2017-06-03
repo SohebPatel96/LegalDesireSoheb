@@ -157,46 +157,7 @@ public class Lawyer_Module extends Fragment {
             }
         });
 
-       /* mViewData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mDatabase.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                            String nname = postSnapshot.child("Name").getValue(String.class);
-                            String nemail = postSnapshot.child("Email").getValue(String.class);
-                            String naddress = postSnapshot.child("Address").getValue(String.class);
-                            String nrating = postSnapshot.child("Rating").getValue(String.class);
-                           // double x = Double.parseDouble(nrating);
-                            String ntype = postSnapshot.child("Type").getValue(String.class);
-                            String nlat = postSnapshot.child("Latitude").getValue(String.class);
-                            String nlng = postSnapshot.child("Longitude").getValue(String.class);
-                            // Log.e(TAG, "======="+postSnapshot.child("Name").getValue());
-                            Log.e(TAG, "======= name:" + nname);
-                            Log.e(TAG, "======= email:" + nemail);
-                            Log.e(TAG, "======= address:" + naddress);
-                            Log.e(TAG, "======= rating:" + nrating + " ");
-                            Log.e(TAG, "======= type:" + ntype);
-                            Log.e(TAG, "======= latitude:" + nlat);
-                            Log.e(TAG, "======= longitude:" + nlng);
-                            Log.e(TAG, "===================================");
 
-                        }
-                        //   String acctname = (String)dataSnapshot.child("Name").getValue();
-                        //  String acctmail = (String)dataSnapshot.child("Email").getValue();
-                        //   Log.d(TAG,"name=" + acctname);
-                        //    Log.d(TAG,"acctmail=" + acctmail);
-
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-            }
-        });*/
         mViewData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -209,72 +170,7 @@ public class Lawyer_Module extends Fragment {
 
 
 
-     /*   mViewData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d(TAG, "View data clicked");
-                mDatabase.addChildEventListener(new ChildEventListener() {
-                    @Override
-                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                        Lawyer_Fields lawyer_fields =  dataSnapshot.getValue(Lawyer_Fields.class);
-                        String nname = lawyer_fields.lname;
-                        String nemail = lawyer_fields.lemail;
-                        String naddress = lawyer_fields.laddress;
-                        String nrating = lawyer_fields.lrating;
-                        String nlat = lawyer_fields.llatitude;
-                        String nlng = lawyer_fields.llongitude;*/
 
-
-
-
-                   /*     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                            Lawyer_Fields lawyer_fields =  postSnapshot.getValue(Lawyer_Fields.class);
-                            String nname = lawyer_fields.lname;
-                            String nemail = lawyer_fields.lemail;
-                            String naddress = lawyer_fields.laddress;
-                            String nrating = lawyer_fields.lrating;
-                            String nlat = lawyer_fields.llatitude;
-                            String nlng = lawyer_fields.llongitude;
-                            Log.e(TAG, "=======" + postSnapshot.toString() + nname);
-                            Log.e(TAG, "=======" + postSnapshot.toString() + nemail);
-                            Log.e(TAG, "=======" + postSnapshot.toString() + naddress);
-                            Log.e(TAG, "=======" + postSnapshot.toString() + nrating);
-                            //  Log.e(TAG, "======="+postSnapshot.child("Name").getValue());
-                        }*/
-        //  String value = dataSnapshot.getValue(String.class);
-        //   String key = dataSnapshot.getKey();
-        //  userData.add(value);
-        //   mKeys.add(key);
-        //   myAdapter.notifyDataSetChanged();
-            /*        }
-
-                    @Override
-                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                        String value = dataSnapshot.getValue(String.class);
-                        String key = dataSnapshot.getKey();
-                        int index = mKeys.indexOf(key);
-                        userData.set(index, value);
-                        myAdapter.notifyDataSetChanged();
-                    }
-
-                    @Override
-                    public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                    }
-
-                    @Override
-                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-
-            }
-        });*/
         return view;
     }
 

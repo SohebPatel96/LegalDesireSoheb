@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
@@ -129,30 +131,31 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
             case "image": {
                 convertView = inflater.inflate(R.layout.chat_room_adapter2, null);
                 holder.relativeLayout = (RelativeLayout) convertView.findViewById(R.id.relativelayout2);
+                holder.relativeLayout2 = (RelativeLayout) convertView.findViewById(R.id.wrap_viewimage);
                 holder.mImage = (ImageView) convertView.findViewById(R.id.img_display);
                 holder.mTime = (TextView) convertView.findViewById(R.id.message_date2);
                 holder.mDownloadImage = (Button) convertView.findViewById(R.id.btn_download_image);
                 holder.mImage.setVisibility(View.GONE);
 
                 if (user_email.equals(email.get(position))) {
-                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.mDownloadImage.getLayoutParams();
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.relativeLayout2.getLayoutParams();
                     params.addRule(RelativeLayout.ALIGN_PARENT_END);
                     RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
                     params2.addRule(RelativeLayout.ALIGN_PARENT_END);
                     if (sdk > Build.VERSION_CODES.KITKAT)
-                        holder.mDownloadImage.setBackground(getContext().getDrawable(R.drawable.bubble_right_green));
+                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.bubble_right_green));
                     else {
-                        holder.mDownloadImage.setBackgroundResource(R.drawable.bubble_right_green);
+                        holder.relativeLayout2.setBackgroundResource(R.drawable.bubble_right_green);
                     }
                 } else {
-                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.mDownloadImage.getLayoutParams();
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.relativeLayout2.getLayoutParams();
                     params.addRule(RelativeLayout.ALIGN_PARENT_START);
                     RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
                     params2.addRule(RelativeLayout.ALIGN_PARENT_START);
                     if (sdk > Build.VERSION_CODES.KITKAT)
-                        holder.mDownloadImage.setBackground(getContext().getDrawable(R.drawable.bubble_left_gray));
+                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.bubble_left_gray));
                     else
-                        holder.mDownloadImage.setBackgroundResource(R.drawable.bubble_left_gray);
+                        holder.relativeLayout2.setBackgroundResource(R.drawable.bubble_left_gray);
 
 
                 }
@@ -165,6 +168,8 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                         updateUI(position, user_email, holder);
                     }
                 });
+
+
                 //   Picasso.with(getContext()).load(fileUri.get(position)).into(holder.mImage);
                 long size = filesize.get(position);
                 double size2 = size / 1024;
@@ -212,7 +217,7 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                         str = sizeInKB + " MB";
                     }
                 } else {
-                    str = (filesize.get(position)/8) + "bytes";
+                    str = (filesize.get(position) / 8) + "bytes";
                 }
                 holder.mMsg.setText("document size:" + str);
                 holder.mTime.setText(msgtime.get(position));
@@ -289,7 +294,17 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
     }
 
     public void downloadImage(int position, ImageView imageView) {
-        Picasso.with(getContext()).load(fileUri.get(position)).into(imageView);
+        Picasso.with(getContext()).load(fileUri.get(position)).into(imageView, new Callback() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onError() {
+                Toast.makeText(getContext(), "Unable to load image", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void downloadDocument(int position) {
@@ -299,7 +314,7 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
         File rootPath = new File(Environment.getExternalStorageDirectory(), "LegalDesire");
         if (!rootPath.exists()) {
             rootPath.mkdirs();
-            
+
         }
 
         final File localFile = new File(rootPath, fileName.get(position));

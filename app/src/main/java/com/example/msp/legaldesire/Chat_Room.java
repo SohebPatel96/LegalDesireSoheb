@@ -1,10 +1,13 @@
 package com.example.msp.legaldesire;
 
 
+import android.*;
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -13,6 +16,7 @@ import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
@@ -195,18 +199,27 @@ public class Chat_Room extends Fragment {
                             // Show only images, no videos or anything else
                             intent.setType("image/*");
                             intent.setAction(Intent.ACTION_GET_CONTENT);
+                            intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
                             // Always show the chooser (if there are multiple options available)
                             startActivityForResult(Intent.createChooser(intent, "Select Image"), PICK_IMAGE_REQUEST);
 
                         } else if (str.equals("Document")) {
+                            int permission = ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+                            if (permission != PackageManager.PERMISSION_GRANTED) {
+                                ActivityCompat.requestPermissions(getActivity(),
+                                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                        1);
+                            };
+
                             Toast.makeText(getContext(), "Doc clicked", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent();
                             // Show only images, no videos or anything else
                             intent.setType("application/pdf|application/msword | application/vnd.ms-powerpoint | application/vnd.ms-excel | text/*");
-                         //   intent.setType("application/pdf|application/msword|application/vnd.ms-powerpoint");
+                            //   intent.setType("application/pdf|application/msword|application/vnd.ms-powerpoint");
                             String[] mimetypes = {"application/pdf|application/msword|application/vnd.ms-powerpoint| application/vnd.ms-excel|text/*"};
-                        //    intent.putExtra(Intent.EXTRA_MIME_TYPES, mimetypes);
+                            //    intent.putExtra(Intent.EXTRA_MIME_TYPES, mimetypes);
                             intent.setAction(Intent.ACTION_GET_CONTENT);
+                            intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
                             // Always show the chooser (if there are multiple options available)
                             startActivityForResult(Intent.createChooser(intent, "Select Document"), PICK_DOCUMENT_REQUEST);
 
@@ -442,51 +455,6 @@ public class Chat_Room extends Fragment {
         }
     }
 
-
- /*   public void uploadDocument() {
-        if (documentPath != null) {
-            Log.d(TAG, "Inside uploadDOcument");
-            final ProgressDialog progressDialog = new ProgressDialog(getContext());
-            progressDialog.setTitle("Uploading");
-            progressDialog.show();
-            StorageReference documentRef = storage.getReference();
-            final String path = "document/" + UUID.randomUUID().toString() + "/" + documentPath.getLastPathSegment();
-            StorageReference document = documentRef.child(path);
-
-            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            byte[] data = byteArrayOutputStream.toByteArray();
-            UploadTask uploadTask = document.putBytes(data);
-            uploadTask.addOnSuccessListener(getActivity(), new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                    progressDialog.dismiss();
-                    Uri downloadUrl = taskSnapshot.getDownloadUrl();
-                    StorageMetadata metadata = taskSnapshot.getMetadata();
-                    String name = metadata.getName();
-                    long size = metadata.getSizeBytes();
-
-                    String type = metadata.getContentType();
-                    Log.d(TAG, "name:" + name + " size:" + size + " type:" + type);
-                    Log.d(TAG, "download URL=" + downloadUrl);
-                    temp_key = root.push().getKey();
-                    Log.d(TAG, "key:" + temp_key);
-                    DatabaseReference message_root = root.child(key).child("Message").child(temp_key);
-                    Map<String, Object> map2 = new HashMap<String, Object>();
-                    map2.put("path", path);
-                    map2.put("msg", " ");
-                    map2.put("user", user_email);
-                    map2.put("uri", downloadUrl.toString());
-                    map2.put("type", "document");
-                    map2.put("filetype", type);
-                    map2.put("file size", size);
-                    map2.put("msg_time", java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime()));
-                    message_root.updateChildren(map2);
-                    Log.d(TAG, "This isnt executed");
-                    Toast.makeText(getContext(), "File Uploaded", Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
-    }*/
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

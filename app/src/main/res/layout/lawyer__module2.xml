@@ -7,9 +7,7 @@
     <ListView
         android:id="@+id/list_viewdata"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/wrap_buttons"
-        android:descendantFocusability="beforeDescendants"
-        android:textSize="10sp"></ListView>
+        android:layout_height="match_parent"
+        android:paddingBottom="45dp" />
 
 </FrameLayout>
