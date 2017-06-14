@@ -3,6 +3,7 @@ package com.example.msp.legaldesire;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -43,18 +44,16 @@ public class Chat_Module extends Fragment {
     private boolean mIfChatExist = false;
     //  private ArrayAdapter<String> arrayAdapter;
     private Chat_List_Adapter arrayAdapter;
-    private ArrayList<String> list_of_rooms = new ArrayList<>();
     private boolean isLawyer = false;
-    private String name, email;
-    Set<String> set = new HashSet<String>();
     ArrayList<String> storeKeys = new ArrayList<>();
+    ArrayList<Uri> profile_pic = new ArrayList<>();
     ArrayList<String> mName = new ArrayList<>();
     ArrayList<Boolean> mNewMessage = new ArrayList<>();
-    ArrayList<Date> mLastActive = new ArrayList<>();
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference().child("Chat");
+    final DatabaseReference root2 = FirebaseDatabase.getInstance().getReference().child("User").child("Lawyer");
+    final DatabaseReference root3 = FirebaseDatabase.getInstance().getReference().child("User").child("Regular");
 
-    String mLawyerEmail, mUserEmail;
-
+    String mUserID, mLawyerID;
     Bundle bundle;
 
     public Chat_Module() {
@@ -65,7 +64,9 @@ public class Chat_Module extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bundle = this.getArguments();
-        if (bundle != null) {
+        mUserID = this.getArguments().getString("User ID");
+
+      /*  if (bundle != null) {
             mIfChatExist = bundle.getBoolean("chat_exist");
             if (mIfChatExist) {
                 Log.d(TAG, "CHAT EXISTS");
@@ -104,7 +105,7 @@ public class Chat_Module extends Fragment {
 
                 }
             });
-        }
+        }*/
 
     }
 
@@ -113,14 +114,12 @@ public class Chat_Module extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_chat__module, container, false);
-        SharedPreferences preferences = getContext().getSharedPreferences("store_name_and_email", Context.MODE_PRIVATE);
-        name = preferences.getString("person_name", null);
-        email = preferences.getString("person_email", null);
+
 
         listview = (ListView) view.findViewById(R.id.chats);
 
         //  arrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, list_of_rooms);
-        arrayAdapter = new Chat_List_Adapter(getContext(), mName, mNewMessage);
+        arrayAdapter = new Chat_List_Adapter(getContext(), profile_pic, mName, mNewMessage);
         listview.setAdapter(arrayAdapter);
 
         root.addValueEventListener(new ValueEventListener() {
@@ -129,29 +128,65 @@ public class Chat_Module extends Fragment {
 
 
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    String lawyer_email = postSnapshot.child("Lawyer Email").getValue(String.class);
-                    String user_email = postSnapshot.child("User Email").getValue(String.class);
-                    Log.d(TAG, "lawyer email:" + lawyer_email);
-                    Log.d(TAG, "user email:" + user_email);
-                    Log.d(TAG, email);
-                    if (email.equals(lawyer_email) || email.equals(user_email)) {
-                        if (email.equals(lawyer_email)) {
+                    final String lawyer_id = postSnapshot.child("Lawyer ID").getValue(String.class);
+                    final String user_id = postSnapshot.child("User ID").getValue(String.class);
+                    if (mUserID.equals(lawyer_id) || mUserID.equals(user_id)) {
+                        storeKeys.add(postSnapshot.getKey());
+                        if (mUserID.equals(lawyer_id)) {
                             isLawyer = true;
                             mName.add(postSnapshot.child("User Name").getValue(String.class));
                             mNewMessage.add(postSnapshot.child("Lawyer Seen").getValue(Boolean.class));
+                            profile_pic.add(Uri.parse(postSnapshot.child("User profile").getValue(String.class)));
+                            //    profile_pic.add(Uri.parse(postSnapshot.child("User profile").getValue(String.class)));
+                          /*  root3.child(user_id).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    String str = dataSnapshot.child("Profile_Pic").getValue(String.class);
+                                    Log.d(TAG, "inside regular:" + user_id);
+                                    Log.d(TAG, str);
+                                    profile_pic.add(Uri.parse(str));
+                                    arrayAdapter.notifyDataSetChanged();
+
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+                            */
                         } else {
                             isLawyer = false;
                             mName.add(postSnapshot.child("Lawyer Name").getValue(String.class));
                             mNewMessage.add(postSnapshot.child("User Seen").getValue(Boolean.class));
+                            profile_pic.add(Uri.parse(postSnapshot.child("Lawyer profile").getValue(String.class)));
+                            //    profile_pic.add(Uri.parse(postSnapshot.child("Lawyer profile").getValue(String.class)));
+                            Log.d(TAG, "lawyerprofiel:" + profile_pic);
+/*
+                            root2.child(lawyer_id).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    Log.d(TAG, "inside lawyer:" + lawyer_id);
+                                    String str = dataSnapshot.child("Profile_Pic").getValue(String.class);
+                                    Log.d(TAG, str);
+                                    profile_pic.add(Uri.parse(str));
+                                    arrayAdapter.notifyDataSetChanged();
+
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+*/
                         }
-                        storeKeys.add(postSnapshot.getKey());
-                        Log.d(TAG, postSnapshot.getKey());
+
+                        arrayAdapter.notifyDataSetChanged();
 
                     }
                 }
-                for (int y = 0; y < mLastActive.size(); y++) {
-                    Log.d(TAG, "mLastActive:" + y + mLastActive.get(y));
-                }
+
                 arrayAdapter.notifyDataSetChanged();
             }
 
@@ -171,8 +206,9 @@ public class Chat_Module extends Fragment {
                 } else {
                     root.child(storeKeys.get(i)).child("User Seen").setValue(true);
                 }
-                bundle.putString("user_name", name);
+                bundle.putString("User ID", mUserID);
                 bundle.putString("key", storeKeys.get(i));
+                bundle.putBoolean("isLawyer", isLawyer);
                 Log.d(TAG, "Clicked:" + storeKeys.get(i));
                 Chat_Room chat_room = new Chat_Room();
                 chat_room.setArguments(bundle);

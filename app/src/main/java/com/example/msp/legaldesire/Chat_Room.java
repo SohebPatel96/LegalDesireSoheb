@@ -79,14 +79,12 @@ public class Chat_Room extends Fragment {
     private Button btn_send_msg;
     Button btn_select_media;
     private EditText input_msg;
-    private TextView chat_conversation;
     private ListView list_message;
     DatabaseReference root;
-    private String getLawyerEmail;
-    private String user_email, user_name, room_name;
-    private String temp_key;
+    private String temp_key, mUserID, mLawyerID;
     private String chat_msg, chat_user_name, chat_date, chat_uri, chat_type;
     private String key;
+    boolean isLawyer;
     ArrayList<String> msg = new ArrayList<>();
     ArrayList<String> email = new ArrayList<>();
     ArrayList<String> msgTime = new ArrayList<>();
@@ -108,20 +106,17 @@ public class Chat_Room extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SharedPreferences preferences = getContext().getSharedPreferences("store_name_and_email", Context.MODE_PRIVATE);
-        user_name = preferences.getString("person_name", null);
-        user_email = preferences.getString("person_email", null);
         Bundle bundle = this.getArguments();
         if (bundle != null) {
+            mUserID = this.getArguments().getString("User ID");
             key = bundle.getString("key");
-            Log.d(TAG, "KEY:" + key);
+            isLawyer = bundle.getBoolean("isLawyer");
         }
         root = FirebaseDatabase.getInstance().getReference().child("Chat");
         root.child(key).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                getLawyerEmail = dataSnapshot.child("Lawyer Email").getValue(String.class);
-                Log.d("soheb123", "sdasda  " + getLawyerEmail);
+                mLawyerID = dataSnapshot.child("Lawyer ID").getValue(String.class);
             }
 
             @Override
@@ -142,7 +137,7 @@ public class Chat_Room extends Fragment {
         input_msg = (EditText) view.findViewById(R.id.edit_addroom2);
         //chat_conversation = (TextView) view.findViewById(R.id.textView5);
         list_message = (ListView) view.findViewById(R.id.message_list);
-        chat_room_adapter = new Chat_Room_Adapter(getContext(), msg, email, msgTime, fileUri, msgType, fileSize, fileType, filepath, fileName);
+        chat_room_adapter = new Chat_Room_Adapter(getContext(), mUserID, msg, email, msgTime, fileUri, msgType, fileSize, fileType, filepath, fileName);
         // list_message.setTranscriptMode(AbsListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
         list_message.setAdapter(chat_room_adapter);
 
@@ -159,8 +154,8 @@ public class Chat_Room extends Fragment {
                     root.child("Message").updateChildren(map);
                     DatabaseReference message_root = root.child(key).child("Message").child(temp_key);
                     Map<String, Object> map2 = new HashMap<String, Object>();
-                    map2.put("user", user_email);
-                    if (user_email.equals(getLawyerEmail)) {
+                    map2.put("user", mUserID);
+                    if (mUserID.equals(mLawyerID)) {
                         root.child(key).child("User Seen").setValue(false);
                     } else {
                         root.child(key).child("Lawyer Seen").setValue(false);
@@ -209,11 +204,11 @@ public class Chat_Room extends Fragment {
                                 ActivityCompat.requestPermissions(getActivity(),
                                         new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                                         1);
-                            };
+                            }
+                            ;
 
                             Toast.makeText(getContext(), "Doc clicked", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent();
-                            // Show only images, no videos or anything else
                             intent.setType("application/pdf|application/msword | application/vnd.ms-powerpoint | application/vnd.ms-excel | text/*");
                             //   intent.setType("application/pdf|application/msword|application/vnd.ms-powerpoint");
                             String[] mimetypes = {"application/pdf|application/msword|application/vnd.ms-powerpoint| application/vnd.ms-excel|text/*"};
@@ -228,14 +223,6 @@ public class Chat_Room extends Fragment {
                     }
                 });
                 popup.show();
-             /*   filePath = null;
-                Log.d(TAG, "Media select button clicked");
-                Intent intent = new Intent();
-                // Show only images, no videos or anything else
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                // Always show the chooser (if there are multiple options available)
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);*/
             }
         });
 
@@ -281,8 +268,6 @@ public class Chat_Room extends Fragment {
             chat_uri = (String) ((DataSnapshot) i.next()).getValue();
             chat_user_name = (String) ((DataSnapshot) i.next()).getValue();
 
-            Log.d(TAG, "filename:" + file_name + "user name:" + chat_user_name + "," + "Message:" + chat_msg + "Date:" + chat_date + "uri:" + chat_uri + " chat type:" + chat_type + "size:" + size + "type:" + type + " path:" + path);
-
             String str = chat_msg;
             String[] splited = str.split(" ");
             String str2 = "";
@@ -312,8 +297,6 @@ public class Chat_Room extends Fragment {
             fileType.add(type);
             filepath.add(path);
             list_message.setSelection(chat_room_adapter.getCount() - 1);
-            //   chat_conversation.append(chat_user_name + ":" + chat_msg + "\n");
-
         }
     }
 
@@ -354,7 +337,7 @@ public class Chat_Room extends Fragment {
                             Map<String, Object> map2 = new HashMap<String, Object>();
                             map2.put("msg", " ");
                             map2.put("path", path);
-                            map2.put("user", user_email);
+                            map2.put("user", mUserID);
                             map2.put("uri", downloadUrl.toString());
                             map2.put("type", "image");
                             map2.put("filetype", type);
@@ -362,6 +345,11 @@ public class Chat_Room extends Fragment {
                             map2.put("file name", fileName);
                             map2.put("msg_time", java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime()));
                             message_root.updateChildren(map2);
+                            if (mUserID.equals(mLawyerID)) {
+                                root.child(key).child("User Seen").setValue(false);
+                            } else {
+                                root.child(key).child("Lawyer Seen").setValue(false);
+                            }
                             Log.d(TAG, "This isnt executed");
                             Toast.makeText(getContext(), "File Uploaded", Toast.LENGTH_SHORT).show();
                         }
@@ -421,7 +409,7 @@ public class Chat_Room extends Fragment {
                             Map<String, Object> map2 = new HashMap<String, Object>();
                             map2.put("path", path);
                             map2.put("msg", " ");
-                            map2.put("user", user_email);
+                            map2.put("user", mUserID);
                             map2.put("uri", downloadUrl.toString());
                             map2.put("type", "document");
                             map2.put("filetype", type);
@@ -429,6 +417,11 @@ public class Chat_Room extends Fragment {
                             map2.put("file name", fileName);
                             map2.put("msg_time", java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime()));
                             message_root.updateChildren(map2);
+                            if (mUserID.equals(mLawyerID)) {
+                                root.child(key).child("User Seen").setValue(false);
+                            } else {
+                                root.child(key).child("Lawyer Seen").setValue(false);
+                            }
                             Log.d(TAG, "This isnt executed");
                             Toast.makeText(getContext(), "File Uploaded", Toast.LENGTH_SHORT).show();
                         }

@@ -1,15 +1,11 @@
 package com.example.msp.legaldesire;
 
-import android.*;
-import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -24,9 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.msp.legaldesire.Admin_Module.Lawyer_Module;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
@@ -40,7 +34,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity extends AppCompatActivity
+public class OnLoginSuccessful extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static final String TAG = "registration123";
@@ -50,22 +44,27 @@ public class MainActivity extends AppCompatActivity
 
     boolean isLawyer = false;
     boolean isRegular = false;
+    boolean isLawyerSearchFinished = false;
+    boolean isRegularSearchFinished = false;
 
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("User");
 
 
     String personName;
     String personEmail;
-    Uri personPhoto;
+    String personPhoto;
+    String mUserID;
 
     ImageView mPersonPhoto;
     TextView mPersonName;
     TextView mPersonEmail;
 
+    Bundle extras;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.on_login_successful);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() == null) {
-                    startActivity(new Intent(MainActivity.this, Login.class));
+                    startActivity(new Intent(OnLoginSuccessful.this, Login.class));
                 }
             }
         };
@@ -91,50 +90,118 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         mPersonPhoto = (ImageView) findViewById(R.id.imageView);
         mPersonName = (TextView) findViewById(R.id.text_name);
         mPersonEmail = (TextView) findViewById(R.id.text_email);
 
-        SharedPreferences preferences = getSharedPreferences("store_name_and_email", MODE_PRIVATE);
-        personName = preferences.getString("person_name", null);
-        personEmail = preferences.getString("person_email", null);
+        extras = getIntent().getExtras();
+        if (extras != null) {
+            personName = extras.getString("person_name");
+            personEmail = extras.getString("person_email");
+            mUserID = extras.getString("uid");
+            personPhoto = extras.getString("person_pic");
+            Log.d(TAG, "OnLoginSuccessful:" + personEmail + " UID:" + mUserID + "photo:" + personPhoto);
+        }
+
+
+        Log.d(TAG, "AFTER REGISTRATION:" + personName + " " + personEmail + " " + mUserID);
         Bundle bundle = new Bundle();
-        bundle.putString("personName", personName);
-        bundle.putString("personEmail", personEmail);
+        //  bundle.putString("personName", personName);
+        //  bundle.putString("personEmail", personEmail);
         Chat_Module chat_module = new Chat_Module();
         chat_module.setArguments(bundle);
 
         Log.d(TAG, "name:" + personName + "," + personEmail);
-
-        mDatabase.child("Lawyer").addValueEventListener(new ValueEventListener() {
+        final ProgressDialog dialog = new ProgressDialog(OnLoginSuccessful.this);
+        dialog.setMessage("Loading..");
+        dialog.show();
+        mDatabase.child("Lawyer").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Log.d(TAG, "Inside Lawyer search");
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    String lemail = postSnapshot.child("Email").getValue(String.class);
-                    Log.d(TAG, "Lawyer:" + lemail);
-
-                    if (lemail.equals(personEmail)) {
+                    String user_id = postSnapshot.child("User ID").getValue(String.class);
+                    if (mUserID.equals(user_id)) {
                         //person has registered before as lawyer, head to lawyer profile
+                        personName = postSnapshot.child("Name").getValue(String.class);
+                        dialog.dismiss();
                         isLawyer = true;
                         isRegular = false;
+                        isLawyerSearchFinished = true;
                         Log.d(TAG, "User logged in is lawyer");
+                        Bundle bundle = new Bundle();
+                        bundle.putString("User ID", mUserID);
+                        Profile_Lawyer profile_lawyer = new Profile_Lawyer();
+                        profile_lawyer.setArguments(bundle);
                         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.fragment_container, new Profile_Lawyer()).commitAllowingStateLoss();
-
+                        fragmentTransaction.replace(R.id.fragment_container, profile_lawyer).commitAllowingStateLoss();
                         break;
                         //Direct user to his/her profile
 
                     }
+                }
+                isLawyerSearchFinished = true;
+                if (!isLawyer && isLawyerSearchFinished) {
+                    mDatabase.child("Regular").addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            Log.d(TAG, "Inside Regular search");
+                            for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                                String lemail = postSnapshot.child("Email").getValue(String.class);
+                                String user_id = postSnapshot.child("User ID").getValue(String.class);
+                                Log.d(TAG, "Regular:" + lemail);
+                                if (mUserID.equals(user_id)) {
+                                    dialog.dismiss();
+                                    personName = postSnapshot.child("Name").getValue(String.class);
+                                    //person has registered before as regular user, head to regular user profile
+                                    isRegular = true;
+                                    isLawyer = false;
+                                    isRegularSearchFinished = true;
+                                    Log.d(TAG, "User logged is regular");
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("User ID", mUserID);
+                                    Profile_Regular profile_regular = new Profile_Regular();
+                                    profile_regular.setArguments(bundle);
+                                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                                    fragmentTransaction.replace(R.id.fragment_container, profile_regular).commitAllowingStateLoss();
+                                    break;
+
+                                    //Direct user to his/her profile
+                                }
+                            }
+                            isRegularSearchFinished = true;
+                            if (!isLawyer && !isRegular && isLawyerSearchFinished && isRegularSearchFinished) {
+                                //User has logged in for the first time, direct user to registration screen
+                                dialog.dismiss();
+                                disableNavView(drawer);
+                                Log.d(TAG, "Sending email and userid:" + personEmail + " " + mUserID);
+                                Bundle bundle = new Bundle();
+                                bundle.putString("Email", personEmail);
+                                bundle.putString("User ID", mUserID);
+                                bundle.putString("Name", personName);
+                                bundle.putString("Photo", personPhoto);
+                                SelectAccount selectAccount = new SelectAccount();
+                                selectAccount.setArguments(bundle);
+                                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                                fragmentTransaction.replace(R.id.fragment_container, selectAccount).commit();
+                            }
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
                 }
             }
 
@@ -144,42 +211,12 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        if (!isLawyer) {
-            mDatabase.child("Regular").addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    Log.d(TAG, "Inside Regular search");
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        String lemail = postSnapshot.child("Email").getValue(String.class);
-                        Log.d(TAG, "Regular:" + lemail);
-                        if (lemail.equals(personEmail)) {
-                            //person has registered before as regular user, head to regular user profile
-                            isRegular = true;
-                            isLawyer = false;
-                            Log.d(TAG, "User logged is regular");
-                            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                            fragmentTransaction.replace(R.id.fragment_container, new Profile_Regular()).commitAllowingStateLoss();
-                            break;
 
-                            //Direct user to his/her profile
-                        }
-                    }
-                }
+    }
 
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
+    public void disableNavView(DrawerLayout drawer) {
+        drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 
-                }
-            });
-        }
-
-
-        if (!isLawyer && !isRegular) {
-            //User has logged in for the first time, direct user to registration screen
-            Log.d(TAG, "User logged for 1st time");
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, new AccountType()).commit();
-        }
     }
 
     @Override
@@ -222,7 +259,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the FullScreenImage/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
@@ -238,19 +275,24 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        Bundle bundle = new Bundle();
+        bundle.putString("Email", personEmail);
+        bundle.putString("Name", personName);
+        bundle.putString("User ID", mUserID);
+        bundle.putBoolean("isLawyer",isLawyer);
         int id = item.getItemId();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
         if (id == R.id.search_lawyer) {
-            fragmentTransaction.replace(R.id.fragment_container, new SearchLawyer()).commit();
-        } else if (id == R.id.admin_module) {
-            fragmentTransaction.replace(R.id.fragment_container, new Lawyer_Module()).commit();
-        } else if (id == R.id.logout) {
+            SearchLawyer searchLawyer = new SearchLawyer();
+            searchLawyer.setArguments(bundle);
+            fragmentTransaction.replace(R.id.fragment_container, searchLawyer).commit();
+        }  else if (id == R.id.logout) {
             signOut();
         } else if (id == R.id.chat_module) {
-            fragmentTransaction.replace(R.id.fragment_container, new Chat_Module()).commit();
-        } else if (id == R.id.upgrade_user) {
-            fragmentTransaction.replace(R.id.fragment_container, new UpgradeUser()).commit();
+            Chat_Module chat_module = new Chat_Module();
+            chat_module.setArguments(bundle);
+            fragmentTransaction.replace(R.id.fragment_container, chat_module).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -258,7 +300,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void signOut() {
+    public void signOut() {
         // Firebase sign out
         mAuth.signOut();
 
@@ -267,7 +309,7 @@ public class MainActivity extends AppCompatActivity
                 new ResultCallback<Status>() {
                     @Override
                     public void onResult(@NonNull Status status) {
-                        //      Toast.makeText(MainActivity.this, "Sign Out Successfully", Toast.LENGTH_SHORT).show();
+                        //      Toast.makeText(OnLoginSuccessful.this, "Sign Out Successfully", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

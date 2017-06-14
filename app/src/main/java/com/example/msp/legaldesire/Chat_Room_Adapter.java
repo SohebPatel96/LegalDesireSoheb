@@ -50,14 +50,16 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
     ArrayList<String> filepath;
     ArrayList<String> fileName;
     ArrayList<Uri> fileUri;
+    String mUserID;
     Context context;
     LayoutInflater inflater;
     int sdk = Build.VERSION.SDK_INT;
 
-    public Chat_Room_Adapter(Context context, ArrayList<String> msg, ArrayList<String> email, ArrayList<String> msgtime, ArrayList<Uri> fileUri, ArrayList<String> msgtype, ArrayList<Long> filesize
+    public Chat_Room_Adapter(Context context, String mUserID, ArrayList<String> msg, ArrayList<String> email, ArrayList<String> msgtime, ArrayList<Uri> fileUri, ArrayList<String> msgtype, ArrayList<Long> filesize
             , ArrayList<String> filetype, ArrayList<String> filepath, ArrayList<String> fileName) {
         super(context, R.layout.chat_room_adapter, msg);
         this.context = context;
+        this.mUserID = mUserID;
         this.msg = msg;
         this.email = email;
         this.msgtime = msgtime;
@@ -97,8 +99,7 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                 holder.mMsg = (TextView) convertView.findViewById(R.id.message);
                 holder.mTime = (TextView) convertView.findViewById(R.id.message_date);
 
-                if (user_email.equals(email.get(position))) {
-                    Log.d(TAG, "user_email:" + user_email + "  email:" + email.get(position));
+                if (mUserID.equals(email.get(position))) {
                     RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.mMsg.getLayoutParams();
                     params.addRule(RelativeLayout.ALIGN_PARENT_END);
                     RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
@@ -120,7 +121,6 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
 
 
                 }
-                Log.d(TAG, "display text executed:" + msg.get(position));
                 holder.mTime.setText(msgtime.get(position));
                 holder.mMsg.setText(msg.get(position));
                 break;
@@ -137,15 +137,16 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                 holder.mDownloadImage = (Button) convertView.findViewById(R.id.btn_download_image);
                 holder.mImage.setVisibility(View.GONE);
 
-                if (user_email.equals(email.get(position))) {
+                if (mUserID.equals(email.get(position))) {
+                    Log.d(TAG, "IMAGE:" + mUserID + "  " + email.get(position));
                     RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.relativeLayout2.getLayoutParams();
                     params.addRule(RelativeLayout.ALIGN_PARENT_END);
                     RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
                     params2.addRule(RelativeLayout.ALIGN_PARENT_END);
                     if (sdk > Build.VERSION_CODES.KITKAT)
-                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.bubble_right_green));
+                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.chat_right_green));
                     else {
-                        holder.relativeLayout2.setBackgroundResource(R.drawable.bubble_right_green);
+                        holder.relativeLayout2.setBackgroundResource(R.drawable.chat_right_green);
                     }
                 } else {
                     RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.relativeLayout2.getLayoutParams();
@@ -153,19 +154,26 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                     RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
                     params2.addRule(RelativeLayout.ALIGN_PARENT_START);
                     if (sdk > Build.VERSION_CODES.KITKAT)
-                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.bubble_left_gray));
+                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.chat_left_gray));
                     else
-                        holder.relativeLayout2.setBackgroundResource(R.drawable.bubble_left_gray);
+                        holder.relativeLayout2.setBackgroundResource(R.drawable.chat_left_gray);
 
 
                 }
                 holder.mDownloadImage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        downloadImage(position, holder.mImage);
-                        holder.mImage.setVisibility(View.VISIBLE);
                         holder.mDownloadImage.setVisibility(View.GONE);
+                        holder.mImage.setVisibility(View.VISIBLE);
+                        downloadImage(position, holder.mImage);
                         updateUI(position, user_email, holder);
+                    }
+                });
+                holder.mImage.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(getContext(), "Image Clicked", Toast.LENGTH_SHORT).show();
+                        fullScreenImage(position);
                     }
                 });
 
@@ -187,15 +195,15 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                 holder.mMsg = (TextView) convertView.findViewById(R.id.text_display_document_metadata);
 
 
-                if (user_email.equals(email.get(position))) {
+                if (mUserID.equals(email.get(position))) {
                     RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.relativeLayout2.getLayoutParams();
                     params.addRule(RelativeLayout.ALIGN_PARENT_END);
                     RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
                     params2.addRule(RelativeLayout.ALIGN_PARENT_END);
                     if (sdk > Build.VERSION_CODES.KITKAT)
-                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.bubble_right_green));
+                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.chat_right_green));
                     else {
-                        holder.relativeLayout2.setBackgroundResource(R.drawable.bubble_right_green);
+                        holder.relativeLayout2.setBackgroundResource(R.drawable.chat_right_green);
                     }
                 } else {
                     RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.relativeLayout2.getLayoutParams();
@@ -203,9 +211,9 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                     RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
                     params2.addRule(RelativeLayout.ALIGN_PARENT_START);
                     if (sdk > Build.VERSION_CODES.KITKAT)
-                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.bubble_left_gray));
+                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.chat_left_gray));
                     else
-                        holder.relativeLayout2.setBackgroundResource(R.drawable.bubble_left_gray);
+                        holder.relativeLayout2.setBackgroundResource(R.drawable.chat_left_gray);
                 }
 
                 String str;
@@ -275,7 +283,6 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
 
     public void setBackgroundForLayout(int position, String user_email, ViewHolder holder) {
         if (user_email.equals(email.get(position))) {
-            Log.d(TAG, "user_email:" + user_email + "  email:" + email.get(position));
             holder.relativeLayout.setGravity(Gravity.START);
             if (sdk > Build.VERSION_CODES.KITKAT)
                 holder.relativeLayout.setBackground(getContext().getDrawable(R.drawable.bubble_right_green));
@@ -357,8 +364,15 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
 
     }
 
+    public void fullScreenImage(int pos){
+        Intent intent = new Intent(getContext(),FullScreenImage.class);
+        intent.setData(fileUri.get(pos));
+        getContext().startActivity(intent);
+
+    }
+
     public void updateUI(int position, String user_email, ViewHolder holder) {
-        if (user_email.equals(email.get(position))) {
+        if (mUserID.equals(email.get(position))) {
             RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.mImage.getLayoutParams();
             params.addRule(RelativeLayout.ALIGN_PARENT_END);
             RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
@@ -379,9 +393,20 @@ public class Chat_Room_Adapter extends ArrayAdapter<String> {
                 holder.mImage.setBackground(getContext().getDrawable(R.drawable.bubble_left_gray));
             else
                 holder.mImage.setBackgroundResource(R.drawable.bubble_left_gray);
-
-
         }
+
+        /*   else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.relativeLayout2.getLayoutParams();
+                    params.addRule(RelativeLayout.ALIGN_PARENT_START);
+                    RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) holder.mTime.getLayoutParams();
+                    params2.addRule(RelativeLayout.ALIGN_PARENT_START);
+                    if (sdk > Build.VERSION_CODES.KITKAT)
+                        holder.relativeLayout2.setBackground(getContext().getDrawable(R.drawable.bubble_left_gray));
+                    else
+                        holder.relativeLayout2.setBackgroundResource(R.drawable.bubble_left_gray);
+
+
+                } */
     }
 
     public void openFile(File f) {

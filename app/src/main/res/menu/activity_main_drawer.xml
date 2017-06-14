@@ -4,16 +4,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/search_lawyer"
-            android:title="Search/Book Lawyer" />
-        <item
-            android:id="@+id/admin_module"
-            android:title="Admin Lawyer Module" />
+            android:title="Search Lawyer" />
+
         <item
             android:id="@+id/chat_module"
             android:title="Message" />
-        <item
-            android:id="@+id/upgrade_user"
-            android:title="Upgrade User" />
+
         <item
             android:id="@+id/logout"
             android:title="Logout" />

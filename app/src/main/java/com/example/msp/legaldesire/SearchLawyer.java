@@ -92,18 +92,16 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
     DatabaseReference mDatabase;
 
     private ViewGroup infoWindow;
-    private TextView infoTitle;
-    private TextView infoSnippet;
-    private Button infoButton;
 
     MapView mMapView;
-    Spinner spinner1, spinner2, spinner3;
+    Spinner spinner1, spinner3;
     Button mSearch;
 
+    String mEmail, mUserID, mName;
+
     double mLocationLat, mLocationLng;
-    boolean isNear = false, isRated = false, isType = false, isCorporate = false, isCriminal = false, isCivil = false;
+    boolean isNear = false, isType = false, isLawyer;
     int searchByDistance;
-    float searchByRating;
     String searchByType;
     boolean mIfChatExist;
 
@@ -227,6 +225,12 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .build();
+
+        final Bundle bundle = this.getArguments();
+        mEmail = bundle.getString("Email");
+        mUserID = bundle.getString("User ID");
+        mName = bundle.getString("Name");
+        isLawyer = bundle.getBoolean("isLawyer");
     }
 
     @Override
@@ -236,7 +240,6 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
         View v = inflater.inflate(R.layout.search_lawyer, container, false);
 
         spinner1 = (Spinner) v.findViewById(R.id.spinner1);
-        spinner2 = (Spinner) v.findViewById(R.id.spinner2);
         spinner3 = (Spinner) v.findViewById(R.id.spinner3);
         mSearch = (Button) v.findViewById(R.id.btn_search);
 
@@ -244,8 +247,6 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
         mMapView.onCreate(savedInstanceState);
 
         this.infoWindow = (ViewGroup) getLayoutInflater(savedInstanceState).inflate(R.layout.custom_marker, null);
-        this.infoTitle = (TextView) infoWindow.findViewById(R.id.title);
-        this.infoSnippet = (TextView) infoWindow.findViewById(R.id.snippet);
 
         mMapView.onResume();// needed to get the map to display immediately
         mMapView.getMapAsync(this);//this will call the onCallBack method, which will load the map on screen
@@ -289,38 +290,6 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
             }
         });
 
-        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                isRated = true;
-                Log.d(TAG, "search by rating");
-                String str = spinner2.getSelectedItem().toString();
-                Log.d(TAG, str + " selected");
-                if (str.equals("1+")) {
-                    searchByRating = 1;
-                    Log.d(TAG, "1search by rating=" + searchByRating);
-                } else if (str.equals("2+")) {
-                    searchByRating = 2;
-                    Log.d(TAG, "2search by rating=" + searchByRating);
-                } else if (str.equals("3+")) {
-                    searchByRating = 3;
-                    Log.d(TAG, "3search by rating=" + searchByRating);
-                } else if (str.equals("4+")) {
-                    searchByRating = 4;
-                    Log.d(TAG, "4search by rating=" + searchByRating);
-                } else {
-                    isRated = false;
-                    Log.d(TAG, "search by rating is false");
-                }
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -348,7 +317,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
             @Override
             public void onClick(View view) {
                 if (mCurrentLocation == null) {
-                    Toast.makeText(getContext(), "Unable to determine location, GPS is disabled", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Unable to determine location, Enable GPS -> High Accuracy", Toast.LENGTH_SHORT).show();
                 } else {
                     categorizeData();
 
@@ -363,7 +332,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
         Log.d(TAG, "Inside categorizeData()");
         mGoogleMap.clear();
 
-        if (isNear == true && isRated == false && isType == false) {//Search only by distance
+        if (isNear == true && isType == false) {//Search only by distance
             Log.d(TAG, "search by distance only");
             mDatabase.addValueEventListener(new ValueEventListener() {
                 @Override
@@ -371,11 +340,10 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         String lname = postSnapshot.child("Name").getValue(String.class);
                         String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
-                        String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
+                        String laddress = postSnapshot.child("City").getValue(String.class);
+                        double llat = postSnapshot.child("Latitude").getValue(double.class);
+                        double llng = postSnapshot.child("Longitude").getValue(double.class);
+                        String uid = postSnapshot.child("User ID").getValue(String.class);
                         Location marker = new Location("Location");
                         marker.setLatitude(llat);
                         marker.setLongitude(llng);
@@ -386,7 +354,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                             Log.d(TAG, "distance within " + searchByDistance + ":" + distance);
                             mGoogleMap.addMarker(new MarkerOptions()
                                     .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating)).setTag(lemail);
+                                    .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
                         } else {
                             Log.d(TAG, "distance not within " + searchByDistance + ":" + distance);
                         }
@@ -399,40 +367,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
 
                 }
             });
-        } else if (isNear == false && isRated == true && isType == false) {//Search only by rating
-            Log.d(TAG, "search by rating only");
-            mDatabase.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        String lname = postSnapshot.child("Name").getValue(String.class);
-                        String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
-                        String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
-
-                        if (lrating >= searchByRating) {
-                            Log.d(TAG, "Rating above " + searchByRating + ":" + lrating);
-                            mGoogleMap.addMarker(new MarkerOptions()
-                                    .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating)).setTag(lemail);
-                            ;
-                        } else {
-                            Log.d(TAG, "Rating below " + searchByRating + ":" + lrating);
-
-                        }
-
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        } else if (isNear == false && isRated == false && isType == true) {//Search only by type
+        } else if (isNear == false && isType == true) {//Search only by type
             Log.d(TAG, "search by type only");
             mDatabase.addValueEventListener(new ValueEventListener() {
                 @Override
@@ -440,17 +375,17 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         String lname = postSnapshot.child("Name").getValue(String.class);
                         String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
+                        String laddress = postSnapshot.child("City").getValue(String.class);
                         String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
+                        double llat = postSnapshot.child("Latitude").getValue(double.class);
+                        double llng = postSnapshot.child("Longitude").getValue(double.class);
+                        String uid = postSnapshot.child("User ID").getValue(String.class);
 
                         if (searchByType.equals(ltype)) {
                             Log.d(TAG, "Type same: " + searchByType + ":" + ltype);
                             mGoogleMap.addMarker(new MarkerOptions()
                                     .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating)).setTag(lemail);
+                                    .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
                             ;
                         } else {
                             Log.d(TAG, "Type different: " + searchByType + ":" + ltype);
@@ -464,42 +399,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
 
                 }
             });
-        } else if (isNear == true && isRated == true && isType == false) {//Search by distance and rating
-            Log.d(TAG, "search by distance and rating");
-            mDatabase.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        String lname = postSnapshot.child("Name").getValue(String.class);
-                        String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
-                        String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
-
-                        Location marker = new Location("Location");
-                        marker.setLatitude(llat);
-                        marker.setLongitude(llng);
-                        double distance = mCurrentLocation.distanceTo(marker);
-                        if (distance <= (searchByDistance * 1000) && lrating >= searchByRating) {
-                            Log.d(TAG, "distance within " + searchByDistance + ":" + distance);
-                            Log.d(TAG, "Rating above " + searchByRating + ":" + lrating);
-                            mGoogleMap.addMarker(new MarkerOptions()
-                                    .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating)).setTag(lemail);
-                        } else {
-                            Log.d(TAG, "Distance or Rating not within condition:distance" + distance + " Rating:" + lrating);
-                        }
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        } else if (isNear == true && isRated == false && isType == true) {//Search by distance and type
+        } else if (isNear == true && isType == true) {//Search by distance and type
             Log.d(TAG, "search by distance and type");
             mDatabase.addValueEventListener(new ValueEventListener() {
                 @Override
@@ -507,11 +407,11 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         String lname = postSnapshot.child("Name").getValue(String.class);
                         String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
+                        String laddress = postSnapshot.child("City").getValue(String.class);
                         String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
+                        double llat = postSnapshot.child("Latitude").getValue(double.class);
+                        double llng = postSnapshot.child("Longitude").getValue(double.class);
+                        String uid = postSnapshot.child("User ID").getValue(String.class);
 
                         Location marker = new Location("Location");
                         marker.setLatitude(llat);
@@ -520,7 +420,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                         if (distance <= (searchByDistance * 1000) && searchByType.equals(ltype)) {
                             mGoogleMap.addMarker(new MarkerOptions()
                                     .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating)).setTag(lemail);
+                                    .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
                             Log.d(TAG, "distance within " + searchByDistance + ":" + distance);
                             Log.d(TAG, "Type same: " + searchByType + ":" + ltype);
                         } else {
@@ -534,93 +434,22 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
 
                 }
             });
-        } else if (isNear == false && isRated == true && isType == true) {//Search by rating and type
-            Log.d(TAG, "search by rating and type");
+        } else if (isNear == false && isType == false) {//Search everything
             mDatabase.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         String lname = postSnapshot.child("Name").getValue(String.class);
                         String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
+                        String laddress = postSnapshot.child("City").getValue(String.class);
                         String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
-
-                        Location marker = new Location("Location");
-                        marker.setLatitude(llat);
-                        marker.setLongitude(llng);
-                        if (lrating >= searchByRating && searchByType.equals(ltype)) {
-                            mGoogleMap.addMarker(new MarkerOptions()
-                                    .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating)).setTag(lemail);
-                            ;
-                            Log.d(TAG, "Rating above " + searchByRating + ":" + lrating);
-                            Log.d(TAG, "Type same: " + searchByType + ":" + ltype);
-                        } else {
-                            Log.d(TAG, "Distance or Type not within condition:rating" + lrating + " Type:" + ltype);
-                        }
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        } else if (isNear == true && isRated == true && isType == true) {//Search by distance,rating and type
-            Log.d(TAG, "search by rating and type");
-            mDatabase.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        String lname = postSnapshot.child("Name").getValue(String.class);
-                        String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
-                        String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
-
-                        Location marker = new Location("Location");
-                        marker.setLatitude(llat);
-                        marker.setLongitude(llng);
-                        double distance = mCurrentLocation.distanceTo(marker);
-                        if (distance <= (searchByDistance * 1000) && lrating >= searchByRating && searchByType.equals(ltype)) {
-                            mGoogleMap.addMarker(new MarkerOptions()
-                                    .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating)).setTag(lemail);
-                            Log.d(TAG, "Rating above " + searchByRating + ":" + lrating);
-                            Log.d(TAG, "Type same: " + searchByType + ":" + ltype);
-                            Log.d(TAG, "distance within " + searchByDistance + ":" + distance);
-                        } else {
-                            Log.d(TAG, "Distance or Type not within condition:distance:" + distance + "rating" + lrating + " Type:" + ltype);
-                        }
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        } else if (isNear == false && isRated == false && isType == false) {//Search everything
-            mDatabase.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        String lname = postSnapshot.child("Name").getValue(String.class);
-                        String lemail = postSnapshot.child("Email").getValue(String.class);
-                        String laddress = postSnapshot.child("Address").getValue(String.class);
-                        double lrating = Double.parseDouble(postSnapshot.child("Rating").getValue(String.class));
-                        String ltype = postSnapshot.child("Type").getValue(String.class);
-                        double llat = Double.parseDouble(postSnapshot.child("Latitude").getValue(String.class));
-                        double llng = Double.parseDouble(postSnapshot.child("Longitude").getValue(String.class));
+                        double llat = postSnapshot.child("Latitude").getValue(double.class);
+                        double llng = postSnapshot.child("Longitude").getValue(double.class);
+                        String uid = postSnapshot.child("User ID").getValue(String.class);
 
                         mGoogleMap.addMarker(new MarkerOptions()
                                 .position(new LatLng(llat, llng))
-                                .title(lname).snippet("address:" + laddress + "\n" + "Rating:" + lrating));
+                                .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
                     }
                 }
 
@@ -658,6 +487,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
 
 
     String lemail, lname, uemail, uname;
+    String lawyer_profile_pic, user_profile_pic;
     Bundle bundle = new Bundle();
 
 
@@ -667,8 +497,6 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
         mGoogleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
             @Override
             public View getInfoWindow(Marker marker) {
-                infoTitle.setText(marker.getTitle());
-                infoSnippet.setText(marker.getSnippet());
                 return infoWindow;
             }
 
@@ -684,79 +512,15 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
             @Override
             public void onInfoWindowClick(final Marker marker) {
                 String tag = (String) marker.getTag();
-                String name = marker.getTitle();
-                SharedPreferences preferences = getContext().getSharedPreferences("store_name_and_email", Context.MODE_PRIVATE);
-                final String personName = preferences.getString("person_name", null);
-                final String personEmail = preferences.getString("person_email", null);
-                final DatabaseReference root = FirebaseDatabase.getInstance().getReference().child("Chat");
+                Bundle myBundle = new Bundle();
+                myBundle.putString("Lawyer ID", tag);
+                myBundle.putString("User ID", mUserID);
+                myBundle.putBoolean("isLawyer", isLawyer);
 
-                root.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                            String lawyer_email = postSnapshot.child("Lawyer Email").getValue(String.class);
-                            String user_email = postSnapshot.child("User Email").getValue(String.class);
-                            if (lawyer_email.equals(marker.getTag()) && user_email.equals(personEmail)) {
-                                mIfChatExist = true;
-                                lemail = lawyer_email;
-                                uemail = user_email;
-                                Log.d(TAG, "Chat exists");
-                                bundle.putBoolean("chat_exist", true);
-                                bundle.putString("lawyer_email", lemail);
-                                bundle.putString("user_email", uemail);
-                                Chat_Module chat_module = new Chat_Module();
-                                chat_module.setArguments(bundle);
-                                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                                fragmentTransaction.replace(R.id.fragment_container, chat_module).commit();
-                                break;
-                            }
-                        }
-                        if (!mIfChatExist) {
-                            Log.d(TAG, "Chat doesnt exist OK");
-                            Log.d(TAG, "Chat conversation doesn't exist");
-                            HashMap<String, Object> Message = new HashMap<String, Object>();
-                            // Message.put("user", "");
-                            //  Message.put("msg", "");
-                            HashMap<String, Object> map = new HashMap<String, Object>();
-                            map.put("Lawyer Email", marker.getTag());
-                            map.put("Lawyer Name", marker.getTitle());
-                            map.put("User Name", personName);
-                            map.put("User Email", personEmail);
-                            map.put("Message", Message);
-                            map.put("Lawyer Seen", false);
-                            map.put("User Seen", false);
-
-
-                            root.push().setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if (task.isSuccessful()) {
-                                        Log.d(TAG, "New chat module created");
-                                        Bundle bundle = new Bundle();
-                                        bundle.putString("lawyer_email", marker.getTag().toString());
-                                        bundle.putString("user_email", personEmail);
-                                        Chat_Module chat_module = new Chat_Module();
-                                        chat_module.setArguments(bundle);
-                                        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                                        fragmentTransaction.replace(R.id.fragment_container, chat_module).commit();
-                                    } else {
-                                        Log.d(TAG, "Failed to create new chat module");
-                                    }
-                                }
-                            });
-                        }
-
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-
-                Log.d(TAG, "inside searchlayer module");
-                Toast.makeText(getContext(), "Window CLicked", Toast.LENGTH_SHORT).show();
-
+                Chat_Lawyer_Profile chat_lawyer_profile = new Chat_Lawyer_Profile();
+                chat_lawyer_profile.setArguments(myBundle);
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, chat_lawyer_profile).commit();
             }
         });
 
@@ -794,13 +558,12 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
                     // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
                 } else {
 
-                    // permission denied, boo! Disable the
+                    // permission denied, Disable the
                     // functionality that depends on this permission.
                     //
-                    //     Toast.makeText(MainActivity.this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
+                    //     Toast.makeText(OnLoginSuccessful.this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
                 }
                 return;
             }

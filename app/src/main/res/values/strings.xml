@@ -65,6 +65,12 @@
     <string name="logout">Logout</string>
     <string name="are_you_sure">Are you sure ?</string>
     <string name="cancel">Cancel</string>
+    <string name="personal_info"><u>Personal Information:</u></string>
+    <string name="pro_info"><u>Professional Information:</u></string>
+    <string name="account_info"><u>Account Information:</u></string>
+    <string name="paniccenter_info"><u>Enter 5 Emergency Contact Numbers:</u></string>
+    <string name="facebook_app_id">139044243326043</string>
+    <string name="fb_login_protocol_scheme">fb139044243326043</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -4,34 +4,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/rounded_corners">
 
-    <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/title"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Title"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/snippet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="snippet"
-            android:textSize="15sp" />
 
         <Button
             android:layout_width="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corner2"
-            android:text="Book this lawyer"
+            android:text="View Profile"
             android:textColor="@color/white"
             android:textSize="15sp" />
-    </LinearLayout>
 
 </RelativeLayout>

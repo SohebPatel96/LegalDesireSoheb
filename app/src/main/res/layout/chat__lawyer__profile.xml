@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.msp.legaldesire.Profile_Lawyer">
+    tools:context="com.example.msp.legaldesire.Chat_Lawyer_Profile">
 
     <LinearLayout
         android:id="@+id/linearlayout2"
@@ -11,6 +11,19 @@
         android:layout_alignParentStart="true"
         android:background="#F17A12"
         android:orientation="horizontal"></LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_addtochat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/lawyerprofilepic"
+        android:background="#F17A12"
+        android:text="+Add to Chat"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/lawyerprofilepic"
@@ -119,13 +132,17 @@
         android:layout_marginTop="10dp"
         android:src="@drawable/orange_location" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/map_View2"
+    <TextView
+        android:id="@+id/lawyertxt_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_below="@id/lawyertxt_type"
-        android:layout_toRightOf="@+id/img_location" />
+        android:layout_below="@+id/lawyertxt_type"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_location"
+        android:textSize="14sp" />
+
 
 
 </RelativeLayout>
