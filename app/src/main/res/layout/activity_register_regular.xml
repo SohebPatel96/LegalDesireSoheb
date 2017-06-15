@@ -27,19 +27,6 @@
             android:textColor="#FF4500"
             android:textSize="25sp" />
 
-        <ImageView
-            android:id="@+id/regular_profile"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_below="@+id/textView_account_info" />
-
-        <Button
-            android:id="@+id/btn_selectimage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_account_info"
-            android:layout_toRightOf="@+id/regular_profile"
-            android:text="Select Image" />
 
         <TextView
             android:id="@+id/enter_email"
@@ -47,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/regular_profile"
+            android:layout_below="@+id/textView_account_info"
             android:gravity="center"
             android:text="Enter Email"
             android:textAppearance="?android:attr/textAppearanceMedium"

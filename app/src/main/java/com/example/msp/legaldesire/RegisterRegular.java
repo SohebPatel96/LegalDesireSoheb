@@ -43,12 +43,10 @@ public class RegisterRegular extends AppCompatActivity {
     FirebaseStorage storage = FirebaseStorage.getInstance();
     FirebaseUser user;
 
-    Button mSubmit, mSelectImage;
-    ImageView mImageView;
+    Button mSubmit;
     EditText mEmailField, mPasswordField, mNameField, mContactField, mCityField, mContact1, mContact2, mContact3, mContact4, mContact5;
     TextView mTextView;
     private FirebaseAuth mAuth;
-    String mEmail, mUserId, mName, mProfilePic;
     Uri mImagePath, mProfilePath;
 
     @Override
@@ -59,8 +57,6 @@ public class RegisterRegular extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference().child("User").child("Regular");
         mAuth = FirebaseAuth.getInstance();
 
-        mImageView = (ImageView) findViewById(R.id.regular_profile);
-        mSelectImage = (Button) findViewById(R.id.btn_selectimage);
         mEmailField = (EditText) findViewById(R.id.edit_email_field);
         mPasswordField = (EditText) findViewById(R.id.edit_password_field);
         mNameField = (EditText) findViewById(R.id.editText_name);
@@ -75,19 +71,7 @@ public class RegisterRegular extends AppCompatActivity {
         mTextView = (TextView) findViewById(R.id.txt_domain);
         mTextView.setText("@legaldesire.com");
 
-       /* mSelectImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                // Show only images, no videos or anything else
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
-                // Always show the chooser (if there are multiple options available)
-                startActivityForResult(Intent.createChooser(intent, "Select Image"), PICK_IMAGE_REQUEST);
 
-            }
-        });*/
 
         mSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,61 +143,4 @@ public class RegisterRegular extends AppCompatActivity {
             }
         });
     }
-
-
-    public void uploadImage() {
-        Log.d(TAG, "Inside uploadFile");
-        StorageReference imageRef = storage.getReference();
-        final String path = "profile_pic/" + UUID.randomUUID().toString() + "/" + mImagePath.getLastPathSegment();
-        StorageReference img = imageRef.child(path);
-        final ProgressDialog dialog = new ProgressDialog(RegisterRegular.this);
-        dialog.setMessage("Loading Image");
-        dialog.show();
-        img.putFile(mImagePath)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        mProfilePath = taskSnapshot.getDownloadUrl();
-                        Log.d(TAG, "URL initialized:" + mProfilePath);
-                        dialog.dismiss();
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        mProfilePath = Uri.parse("empty");
-                        dialog.dismiss();
-                    }
-                });
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-
-            mImagePath = data.getData();
-            Log.d(TAG, "mimagepath:" + mImagePath);
-            Picasso.with(this).load(mImagePath).into(mImageView);
-            if (mImagePath != null) {
-                uploadImage();
-            }
-
-            //  uploadImage();
-
-           /* try {
-                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContext().getContentResolver(), uri);
-                Log.d(TAG, String.valueOf(bitmap));
-
-                ImageView imageView = (ImageView) findViewById(R.id.imageView);
-                imageView.setImageBitmap(bitmap);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }*/
-        }
-
-    }
-
-
 }

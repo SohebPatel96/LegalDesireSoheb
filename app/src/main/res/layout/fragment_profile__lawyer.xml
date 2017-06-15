@@ -19,6 +19,17 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="60dp" />
 
+    <Button
+        android:id="@+id/btn_upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lawyerprofilepic"
+        android:background="#F17A12"
+        android:textSize="12sp"
+        android:text="Upload Photo"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white" />
+
     <TextView
         android:id="@+id/lawyertxt_name"
         android:layout_width="wrap_content"

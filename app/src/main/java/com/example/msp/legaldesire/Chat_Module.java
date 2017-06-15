@@ -136,17 +136,21 @@ public class Chat_Module extends Fragment {
                             isLawyer = true;
                             mName.add(postSnapshot.child("User Name").getValue(String.class));
                             mNewMessage.add(postSnapshot.child("Lawyer Seen").getValue(Boolean.class));
-                            profile_pic.add(Uri.parse(postSnapshot.child("User profile").getValue(String.class)));
+                         //   profile_pic.add(Uri.parse(postSnapshot.child("User profile").getValue(String.class)));
                             //    profile_pic.add(Uri.parse(postSnapshot.child("User profile").getValue(String.class)));
-                          /*  root3.child(user_id).addValueEventListener(new ValueEventListener() {
+                            root3.child(user_id).addValueEventListener(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
                                     String str = dataSnapshot.child("Profile_Pic").getValue(String.class);
                                     Log.d(TAG, "inside regular:" + user_id);
                                     Log.d(TAG, str);
                                     profile_pic.add(Uri.parse(str));
-                                    arrayAdapter.notifyDataSetChanged();
+                                    getActivity().runOnUiThread(new Runnable() {
+                                        public void run() {
+                                            arrayAdapter.notifyDataSetChanged();
 
+                                        }
+                                    });
                                 }
 
                                 @Override
@@ -154,15 +158,15 @@ public class Chat_Module extends Fragment {
 
                                 }
                             });
-                            */
+
                         } else {
                             isLawyer = false;
                             mName.add(postSnapshot.child("Lawyer Name").getValue(String.class));
                             mNewMessage.add(postSnapshot.child("User Seen").getValue(Boolean.class));
-                            profile_pic.add(Uri.parse(postSnapshot.child("Lawyer profile").getValue(String.class)));
+                          //  profile_pic.add(Uri.parse(postSnapshot.child("Lawyer profile").getValue(String.class)));
                             //    profile_pic.add(Uri.parse(postSnapshot.child("Lawyer profile").getValue(String.class)));
                             Log.d(TAG, "lawyerprofiel:" + profile_pic);
-/*
+
                             root2.child(lawyer_id).addValueEventListener(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -170,7 +174,12 @@ public class Chat_Module extends Fragment {
                                     String str = dataSnapshot.child("Profile_Pic").getValue(String.class);
                                     Log.d(TAG, str);
                                     profile_pic.add(Uri.parse(str));
-                                    arrayAdapter.notifyDataSetChanged();
+                                    getActivity().runOnUiThread(new Runnable() {
+                                        public void run() {
+                                            arrayAdapter.notifyDataSetChanged();
+
+                                        }
+                                    });
 
                                 }
 
@@ -179,15 +188,15 @@ public class Chat_Module extends Fragment {
 
                                 }
                             });
-*/
+
                         }
 
-                        arrayAdapter.notifyDataSetChanged();
+                      //  arrayAdapter.notifyDataSetChanged();
 
                     }
                 }
 
-                arrayAdapter.notifyDataSetChanged();
+              //  arrayAdapter.notifyDataSetChanged();
             }
 
             @Override
