@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration_and_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.msp.legaldesire.Login">
+
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_email"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/edit_password"
+        android:layout_centerHorizontal="true"
+        android:background="#F17A12"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/wrap_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="don't have an account?" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Register"
+            android:textColor="@color/blue_500"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrap_register"
+        android:layout_centerHorizontal="true"></com.google.android.gms.common.SignInButton>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/googleBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <!--
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/facebook_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/dotted"
+        android:gravity="center"
+        android:text="Find Lawyers/Law Firm"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF4500" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/dotted"
+        android:gravity="center"
+        android:text="Learn Law"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/dotted"
+        android:gravity="center"
+        android:text="File Complaint"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/dotted"
+        android:gravity="center"
+        android:text="My Cases"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/dotted"
+        android:gravity="center"
+        android:text="My Advocate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/dotted"
+        android:gravity="center"
+        android:text="Legal Services"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/dotted"
+        android:text="Panic Center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView15"
+        android:layout_alignRight="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/dotted"
+        android:gravity="center"
+        android:text="Court Judgement"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4500" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Power of Law is in your Hands"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        -->
+
+</RelativeLayout>

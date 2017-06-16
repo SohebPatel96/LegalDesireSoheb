@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:padding="40dp"
+
+    tools:context="com.example.msp.legaldesire.SelectAccount">
+
+    <TextView
+        android:id="@+id/text_display_account_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Account Type:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_display_account_type">
+
+        <RadioButton
+            android:id="@+id/radio_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regular"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radio_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lawyer"
+            android:textSize="22sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_grp"
+        android:layout_marginTop="10dp"
+        android:background="#F17A12"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_grp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/btn_next"
+        android:background="#F17A12"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

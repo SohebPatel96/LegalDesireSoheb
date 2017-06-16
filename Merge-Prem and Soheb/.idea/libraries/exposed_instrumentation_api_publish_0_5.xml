@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="exposed-instrumentation-api-publish-0.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/bde92f8b742714192e1d62abbb6b8d7815d9709a/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/bde92f8b742714192e1d62abbb6b8d7815d9709a/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/Soheb/TimePass/software/SDK/extras/android/m2repository/com/android/support/test/exposed-instrumentation-api-publish/0.5/exposed-instrumentation-api-publish-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

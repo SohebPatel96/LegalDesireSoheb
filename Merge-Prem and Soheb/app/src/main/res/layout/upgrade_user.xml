@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:padding="20dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="com.example.msp.legaldesire.UpgradeUser">
+
+        <RelativeLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedcorners4"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/txt_view1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/grey_300"
+                android:text=" Free Package"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_view4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_view1"
+                android:layout_centerHorizontal="true"
+                android:text="FREE"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_view4"
+                android:text="•Search for Lawyers\n•Read Articles \n•Panic Center "
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedcorners4"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/grey_300"
+                android:text=" Premium Package"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_view5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_view2"
+                android:layout_centerHorizontal="true"
+                android:text="50₹"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_view5"
+                android:text="•Search for Lawyers\n•Read Articles\n•Panic Center\n•Get Legal Advice:\n Chat with upto 2 lawyers"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_view3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedcorners5"
+                android:text="Buy Plan" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
