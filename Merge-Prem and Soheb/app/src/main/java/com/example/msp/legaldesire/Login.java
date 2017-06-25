@@ -1,17 +1,24 @@
 package com.example.msp.legaldesire;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -23,6 +30,7 @@ import com.facebook.GraphResponse;
 import com.facebook.appevents.AppEventsLogger;
 
 
+import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.Auth;
@@ -46,12 +54,12 @@ import org.json.JSONObject;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 public class Login extends FragmentActivity {
-    ViewPager viewPager;
     SignInButton mGoogleBtn;
-    Button mMailLogin;
     public static final String TAG = "registration123";
     private static final int RC_SIGN_IN = 1;
     private GoogleApiClient mGoogleApiClient;
@@ -60,12 +68,9 @@ public class Login extends FragmentActivity {
     LoginButton facebook_login;
     CallbackManager callbackManager;
     String personName;
-    String personGivenName;
-    String personFamilyName;
     String personEmail;
     String uid;
     Uri personPhoto;
-    String personId;
     Integer google = 0;
 
     EditText mEmail, mPassword;
@@ -75,11 +80,29 @@ public class Login extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //   FacebookSdk.sdkInitialize(getApplicationContext());
+
+     /*   PackageInfo info;
+        try {
+            info = getPackageManager().getPackageInfo("com.example.msp.legaldesire", PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md;
+                md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                String something = new String(Base64.encode(md.digest(), 0));
+                //String something = new String(Base64.encodeBytes(md.digest()));
+                Log.e("hash key", something);
+            }
+        } catch (PackageManager.NameNotFoundException e1) {
+            Log.e("name not found", e1.toString());
+        } catch (NoSuchAlgorithmException e) {
+            Log.e("no such an algorithm", e.toString());
+        } catch (Exception e) {
+            Log.e("exception", e.toString());
+        }*/
         setContentView(R.layout.activity_login);
         callbackManager = CallbackManager.Factory.create();
         facebook_login = (LoginButton) findViewById(R.id.facebook_login);
-       // facebook_login.setReadPermissions("email", "public_profile");
+        facebook_login.setReadPermissions("email", "public_profile");
         mGoogleBtn = (SignInButton) findViewById(R.id.googleBtn);
         mEmail = (EditText) findViewById(R.id.edit_email);
         mPassword = (EditText) findViewById(R.id.edit_password);
@@ -87,54 +110,48 @@ public class Login extends FragmentActivity {
         mRegister = (Button) findViewById(R.id.btn_register);
         mAuth = FirebaseAuth.getInstance();
 
-        facebook_login.setReadPermissions(Arrays.asList("email"));
-        facebook_login.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(final LoginResult loginResult) {
-                String uid=loginResult.getAccessToken().getUserId(); Bundle bFacebookData;
-              final String  photo_url=  "http://graph.facebook.com/"+ uid+ "/picture?type=large";
-                // Toast.makeText(Login.this, loginResult.getAccessToken().getUserId(), Toast.LENGTH_SHORT).show();
-
-                GraphRequest request = GraphRequest.newMeRequest(loginResult.getAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
-
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
                     @Override
-                    public void onCompleted(JSONObject object, GraphResponse response) {
-                        Log.i("LoginActivity", response.toString());
-                        // Get facebook data from login
-                        String uid=loginResult.getAccessToken().getUserId();
-                        Bundle bFacebookData = getFacebookData(object);
-                        Intent i = new Intent(new Intent(Login.this, OnLoginSuccessful.class));
-                        i.putExtra("person_name", bFacebookData.getString("first_name")+bFacebookData.getString("last_name"));
-                        i.putExtra("person_email", bFacebookData.getString("email"));
-                        i.putExtra("person_pic", photo_url);
-                        i.putExtra("uid", uid);
-                        startActivity(i);
-                        Toast.makeText(Login.this, bFacebookData.getString("email")+""+bFacebookData.getString("first_name"), Toast.LENGTH_SHORT).show();
-
+                    public void onSuccess(LoginResult loginResult) {
+                        // App code
+                        Log.d("fblogin", "Login successful2");
 
                     }
-                });
-                Bundle parameters = new Bundle();
-                parameters.putString("fields", "id, first_name, last_name, email,gender, birthday, location"); // Parámetros que pedimos a facebook
-                request.setParameters(parameters);
-                request.executeAsync();
 
+                    @Override
+                    public void onCancel() {
+                        // App code
+                        Log.d("fblogin", "Log out 2");
+                    }
+
+                    @Override
+                    public void onError(FacebookException exception) {
+                        // App code
+                    }
+                });
+
+
+        facebook_login.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Log.d("fblogin", "Login successful:" + loginResult);
+                handleFacebookAccessToken(loginResult.getAccessToken());
 
             }
-
 
             @Override
             public void onCancel() {
-                Toast.makeText(Login.this, "Cancelled", Toast.LENGTH_SHORT).show();
+                // App code
+                Log.d("fblogin", "facebook:onCancel");
+
             }
 
             @Override
-            public void onError(FacebookException error) {
-                Toast.makeText(Login.this, "Error", Toast.LENGTH_SHORT).show();
-
+            public void onError(FacebookException exception) {
+                Log.d("fblogin", "facebook:onError", exception);
             }
         });
-
 
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -184,8 +201,6 @@ public class Login extends FragmentActivity {
         //which is your facebook login button?
 
 
-
-
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -227,6 +242,28 @@ public class Login extends FragmentActivity {
         }
     }
 
+    private void handleFacebookAccessToken(AccessToken token) {
+        Log.d(TAG, "handleFacebookAccessToken:" + token);
+
+        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+        mAuth.signInWithCredential(credential)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Toast.makeText(Login.this, "Login Successful",Toast.LENGTH_SHORT);
+
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Toast.makeText(Login.this, "Login Failed:" + task.getException(), Toast.LENGTH_SHORT);
+                        }
+
+                        // ...
+                    }
+                });
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -238,42 +275,11 @@ public class Login extends FragmentActivity {
         google = 1;
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
-    private Bundle getFacebookData(JSONObject object) {
 
-        try {
-            Bundle bundle = new Bundle();
-            String id = object.getString("id");
-
-            try {
-                URL profile_pic = new URL("https://graph.facebook.com/" + id + "/picture?width=200&height=150");
-                Log.i("profile_pic", profile_pic + "");
-                bundle.putString("profile_pic", profile_pic.toString());
-
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-                return null;
-            }
-
-            bundle.putString("idFacebook", id);
-            if (object.has("first_name"))
-                bundle.putString("first_name", object.getString("first_name"));
-            if (object.has("last_name"))
-                bundle.putString("last_name", object.getString("last_name"));
-            if (object.has("email"))
-                bundle.putString("email", object.getString("email"));
-            Toast.makeText(Login.this,object.getString("email")+object.getString("last_name")+ "", Toast.LENGTH_SHORT).show();
-
-            return bundle;
-        }
-        catch(JSONException e) {
-            //Log.d(TAG,"Error parsing JSON")
-            return null;
-        }
-
-    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        callbackManager.onActivityResult(requestCode, resultCode, data);
         if (google == 0) {
             callbackManager.onActivityResult(requestCode, resultCode, data);
         }

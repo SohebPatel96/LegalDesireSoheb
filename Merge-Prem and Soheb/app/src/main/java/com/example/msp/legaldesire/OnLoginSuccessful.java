@@ -21,6 +21,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+
+
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.auth.api.Auth;
@@ -194,7 +197,7 @@ public class OnLoginSuccessful extends AppCompatActivity
                                 SelectAccount selectAccount = new SelectAccount();
                                 selectAccount.setArguments(bundle);
                                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                                fragmentTransaction.replace(R.id.fragment_container, selectAccount).commit();
+                                fragmentTransaction.replace(R.id.fragment_container, selectAccount).commitAllowingStateLoss();
                             }
 
                         }
@@ -295,6 +298,11 @@ public class OnLoginSuccessful extends AppCompatActivity
             Chat_Module chat_module = new Chat_Module();
             chat_module.setArguments(bundle);
             fragmentTransaction.replace(R.id.fragment_container, chat_module).commit();
+        }else if(id == R.id.appointment){
+            My_Appointment my_appointment = new My_Appointment();
+            my_appointment.setArguments(bundle);
+            fragmentTransaction.replace(R.id.fragment_container, my_appointment).commit();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -307,10 +315,13 @@ public class OnLoginSuccessful extends AppCompatActivity
         {
             AccessToken accessToken = AccessToken.getCurrentAccessToken();
             LoginManager.getInstance().logOut();
+            mAuth.signOut();
+
 
         }
         // Firebase sign out
         else{
+            LoginManager.getInstance().logOut();
             mAuth.signOut();
 
 
@@ -327,6 +338,10 @@ public class OnLoginSuccessful extends AppCompatActivity
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
         return accessToken != null;
 
+    }
+
+    public void setActionBarTitle(String title) {
+        getSupportActionBar().setTitle(title);
     }
 
 }

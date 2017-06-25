@@ -1,14 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\popup.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\menu\\popup.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_payments.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\menu\\menu_payments.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\popup.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\menu\\popup.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_temp.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\menu\\menu_temp.xml"
     }
 ]

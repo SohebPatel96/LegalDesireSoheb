@@ -1,26 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_template_big_media.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\magicretry_fragment.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\bf4b689841af6555a056676167e33733739452e8\\output\\res\\layout-v11\\magicretry_fragment.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     }
 ]

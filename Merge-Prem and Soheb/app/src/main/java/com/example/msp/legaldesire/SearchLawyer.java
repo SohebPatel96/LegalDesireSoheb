@@ -9,8 +9,12 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationManager;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -32,6 +36,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -63,6 +68,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
+
+import org.w3c.dom.Text;
 
 import java.io.IOError;
 import java.io.IOException;
@@ -72,6 +81,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 /**
@@ -92,6 +103,12 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
     DatabaseReference mDatabase;
 
     private ViewGroup infoWindow;
+    private TextView infoName;
+    private TextView infoVerify;
+    private TextView infoType;
+    private TextView indicator;
+    private CircleImageView profieImage;
+    private ImageView verifyImage;
 
     MapView mMapView;
     Spinner spinner1, spinner3;
@@ -104,6 +121,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
     int searchByDistance;
     String searchByType;
     boolean mIfChatExist;
+    Marker mMarker;
 
 
     public SearchLawyer() {
@@ -246,7 +264,6 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
         mMapView = (MapView) v.findViewById(R.id.mapView);
         mMapView.onCreate(savedInstanceState);
 
-        this.infoWindow = (ViewGroup) getLayoutInflater(savedInstanceState).inflate(R.layout.custom_marker, null);
 
         mMapView.onResume();// needed to get the map to display immediately
         mMapView.getMapAsync(this);//this will call the onCallBack method, which will load the map on screen
@@ -344,6 +361,8 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                         double llat = postSnapshot.child("Latitude").getValue(double.class);
                         double llng = postSnapshot.child("Longitude").getValue(double.class);
                         String uid = postSnapshot.child("User ID").getValue(String.class);
+                        String lpic = postSnapshot.child("Type").getValue(String.class);
+                        String ltype = postSnapshot.child("Type").getValue(String.class);
                         Location marker = new Location("Location");
                         marker.setLatitude(llat);
                         marker.setLongitude(llng);
@@ -354,7 +373,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                             Log.d(TAG, "distance within " + searchByDistance + ":" + distance);
                             mGoogleMap.addMarker(new MarkerOptions()
                                     .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
+                                    .title(lname).snippet(ltype)).setTag(uid);
                         } else {
                             Log.d(TAG, "distance not within " + searchByDistance + ":" + distance);
                         }
@@ -380,12 +399,14 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                         double llat = postSnapshot.child("Latitude").getValue(double.class);
                         double llng = postSnapshot.child("Longitude").getValue(double.class);
                         String uid = postSnapshot.child("User ID").getValue(String.class);
+                        String lpic = postSnapshot.child("Type").getValue(String.class);
+
 
                         if (searchByType.equals(ltype)) {
                             Log.d(TAG, "Type same: " + searchByType + ":" + ltype);
                             mGoogleMap.addMarker(new MarkerOptions()
                                     .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
+                                    .title(lname).snippet(ltype)).setTag(uid);
                             ;
                         } else {
                             Log.d(TAG, "Type different: " + searchByType + ":" + ltype);
@@ -409,6 +430,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                         String lemail = postSnapshot.child("Email").getValue(String.class);
                         String laddress = postSnapshot.child("City").getValue(String.class);
                         String ltype = postSnapshot.child("Type").getValue(String.class);
+                        String lpic = postSnapshot.child("Type").getValue(String.class);
                         double llat = postSnapshot.child("Latitude").getValue(double.class);
                         double llng = postSnapshot.child("Longitude").getValue(double.class);
                         String uid = postSnapshot.child("User ID").getValue(String.class);
@@ -420,7 +442,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                         if (distance <= (searchByDistance * 1000) && searchByType.equals(ltype)) {
                             mGoogleMap.addMarker(new MarkerOptions()
                                     .position(new LatLng(llat, llng))
-                                    .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
+                                    .title(lname).snippet(ltype)).setTag(uid);
                             Log.d(TAG, "distance within " + searchByDistance + ":" + distance);
                             Log.d(TAG, "Type same: " + searchByType + ":" + ltype);
                         } else {
@@ -443,13 +465,14 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
                         String lemail = postSnapshot.child("Email").getValue(String.class);
                         String laddress = postSnapshot.child("City").getValue(String.class);
                         String ltype = postSnapshot.child("Type").getValue(String.class);
+                        String lpic = postSnapshot.child("Type").getValue(String.class);
                         double llat = postSnapshot.child("Latitude").getValue(double.class);
                         double llng = postSnapshot.child("Longitude").getValue(double.class);
                         String uid = postSnapshot.child("User ID").getValue(String.class);
-
+                        //      Bitmap bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
                         mGoogleMap.addMarker(new MarkerOptions()
                                 .position(new LatLng(llat, llng))
-                                .title(lname).snippet("City:" + laddress + "\n")).setTag(uid);
+                                .title(lname).snippet(ltype)).setTag(uid);
                     }
                 }
 
@@ -489,14 +512,118 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
     String lemail, lname, uemail, uname;
     String lawyer_profile_pic, user_profile_pic;
     Bundle bundle = new Bundle();
+    boolean imgLoad;
 
+    public void getData(String id) {
 
+    }
+
+    MarkerWindowAdapter markerWindowAdapter;
+
+String name,type;
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mGoogleMap = googleMap;
-        mGoogleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
+
+        markerWindowAdapter = new MarkerWindowAdapter(getContext());
+
+
+        mGoogleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(final Marker marker) {
+                String id = (String) marker.getTag();
+                DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("Lawyer").child(id);
+                databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                         name = dataSnapshot.child("Name").getValue(String.class);
+                         type = dataSnapshot.child("Type").getValue(String.class);
+                        String pic = dataSnapshot.child("Profile_Pic").getValue(String.class);
+
+                        Picasso.with(getContext()).load(pic).into(new Target() {
+                            @Override
+                            public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                                Drawable drawImage = new BitmapDrawable(getContext().getResources(),bitmap);
+                                markerWindowAdapter.drawable = drawImage;
+                                markerWindowAdapter.name = name;
+                                markerWindowAdapter.type = type;
+                                marker.showInfoWindow();
+
+                            }
+
+                            @Override
+                            public void onBitmapFailed(Drawable errorDrawable) {
+                                markerWindowAdapter.drawable = null;
+                                markerWindowAdapter.name = name;
+                                markerWindowAdapter.type = type;
+                                marker.showInfoWindow();
+
+                            }
+
+                            @Override
+                            public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+                            }
+                        });
+
+
+
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+                return true;
+            }
+        });
+
+        mGoogleMap.setInfoWindowAdapter(markerWindowAdapter);
+
+      /*  mGoogleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
+
             @Override
             public View getInfoWindow(Marker marker) {
+                mMarker = marker;
+                imgLoad = false;
+                Log.d(TAG, "imgLoad inside getInfoWindow value:" + imgLoad);
+                String id = (String) marker.getTag();
+                mDatabase.child(id).addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String lname = dataSnapshot.child("Name").getValue(String.class);
+                        String ltype = dataSnapshot.child("Type").getValue(String.class);
+                        String lpic = dataSnapshot.child("Profile_Pic").getValue(String.class);
+                        Log.d(TAG, "Name:" + lname);
+                        infoName.setText(lname);
+                        infoType.setText(ltype);
+                        Picasso.with(getContext()).load(lpic).error(R.drawable.empty_profile).into(profieImage, new com.squareup.picasso.Callback() {
+                            @Override
+                            public void onSuccess() {
+                                Log.d(TAG, "imgLoad inside onSuccess value:" + imgLoad);
+                             //   mMarker.showInfoWindow();
+                            }
+
+                            @Override
+                            public void onError() {
+                                imgLoad = true;
+                                Log.d(TAG, "imgLoad inside onFailure value:" + imgLoad);
+                              //  mMarker.showInfoWindow();
+                                profieImage.setImageResource(R.drawable.empty_profile);
+
+                            }
+                        });
+
+
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
                 return infoWindow;
             }
 
@@ -504,7 +631,7 @@ public class SearchLawyer extends Fragment implements OnMapReadyCallback,
             public View getInfoContents(Marker marker) {
                 return null;
             }
-        });
+        });*/
         bundle.putBoolean("chat_exists", false);
 
 

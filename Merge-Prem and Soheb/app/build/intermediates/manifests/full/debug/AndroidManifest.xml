@@ -27,6 +27,9 @@
         android:name="android.support.VERSION"
         android:value="25.3.1" />
 
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        android:protectionLevel="signature" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
@@ -127,6 +130,7 @@
             android:name="com.example.msp.legaldesire.Register"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+        <activity android:name="com.example.msp.legaldesire.Select_Location" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"
@@ -170,6 +174,40 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.facebook.internal.FacebookInitProvider"
             android:authorities="com.example.msp.legaldesire.FacebookInitProvider"
             android:exported="false" />
+
+        <activity
+            android:name="com.payu.payuui.Activity.PayUBaseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.payu.payuui.Activity.PaymentsActivity"
+            android:label="@string/title_activity_payments"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.payu.payuui.Activity.OldPaymentActivity"
+            android:label="@string/title_activity_payments"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.payu.custombrowser.CBActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service android:name="com.payu.custombrowser.services.SnoozeService" />
+
+        <activity android:name="com.payu.magicretry.MainActivity" >
+
+            <!--
+            intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter
+            -->
+        </activity>
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

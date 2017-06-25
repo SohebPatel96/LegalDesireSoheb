@@ -1,402 +1,562 @@
 [
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_send.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\ic_action_send.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_white_bg_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downlo.jpg",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\downlo.jpg"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_login_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_login_silver_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_email.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\orange_email.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_cancel_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dotted.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\dotted.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_icon.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_location.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\orange_location.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\outgoing_bubble.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\outgoing_bubble.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_edittext.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\rounded_edittext.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedcorner3.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\roundedcorner3.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corners.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\rounded_corners.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_send_button_icon.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_send_button_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\navigation_empty_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_send_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_bg_low.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_tile_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bubble_right_green.9.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\bubble_right_green.9.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_blue_bg_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_left_gray.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\chat_left_gray.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_image.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\circle_image.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedcorners4.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\roundedcorners4.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\incoming_bubble.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\incoming_bubble.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_blue_bg_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_logo.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_login_logo.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\design_ic_visibility.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_right_green.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\chat_right_green.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corners_button.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\rounded_corners_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\empty_profile.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\empty_profile.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_phone.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\orange_phone.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_lawyertype.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\orange_lawyertype.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedcorners5.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\roundedcorners5.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_favicon_blue.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_favicon_blue.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\design_fab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_white_bg_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_header_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_icon_profile.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\user_icon_profile.png"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_like_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\download.jpg",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\download.jpg"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_favicon_blue.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_favicon_blue.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corner2.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\rounded_corner2.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\download.jpg",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\download.jpg"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_login_background.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_sbi.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\logo_sbi.png"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bubble_left_gray.9.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\bubble_left_gray.9.png"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image_cvv.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\image_cvv.png"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_login_silver_background.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_icici.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\logo_icici.png"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grey_round_rect.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\grey_round_rect.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\incoming_bubble.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\incoming_bubble.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\spinner_bg.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\spinner_bg.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_lawyertype.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\orange_lawyertype.png"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downl.jpg",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\downl.jpg"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_send_button_icon.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_send_button_icon.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_background.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\otp_button_selector.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\otp_button_selector.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_background.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_header_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_background.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_auth_dialog_background.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_mail.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\ic_action_mail.png"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_email.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\orange_email.png"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_add.png",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\drawable\\ic_action_add.png"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corner2.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\rounded_corner2.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_send.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\ic_action_send.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_edittext.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\rounded_edittext.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mas_icon.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\mas_icon.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_custom_background.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\my_custom_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_icon_profile.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\user_icon_profile.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedcorners5.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\roundedcorners5.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_progress.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\shape_progress.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_location.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\orange_location.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\empty_profile.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\empty_profile.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_tick.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\blue_tick.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_drawable.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\background_drawable.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corners_button.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\rounded_corners_button.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\trusticon.png",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\bf4b689841af6555a056676167e33733739452e8\\output\\res\\drawable\\trusticon.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_white_bg_round.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_mail.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\ic_action_mail.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_icon.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_icon.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dotted.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\dotted.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cb_edit_text.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\cb_edit_text.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_rect_shape.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\round_rect_shape.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grey_lock.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\grey_lock.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\listview_border.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\listview_border.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_add.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\ic_action_add.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\monthicon.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\monthicon.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_saved_card.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\layout_saved_card.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cb_progress_bar.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\cb_progress_bar.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_image.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\circle_image.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_citi.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\logo_citi.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_cancel_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\approve_otp_button.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\approve_otp_button.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_repeat_black_36dp.png",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\bf4b689841af6555a056676167e33733739452e8\\output\\res\\drawable\\ic_repeat_black_36dp.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downlo.jpg",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\downlo.jpg"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hdfc_flat_logo.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\hdfc_flat_logo.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_cross.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\red_cross.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_drawable.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\bf4b689841af6555a056676167e33733739452e8\\output\\res\\drawable\\ripple_drawable.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mc_icon.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\mc_icon.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_phone.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\orange_phone.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_blue_bg_round.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_right_green.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\chat_right_green.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bttn_grey_disabled.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\bttn_grey_disabled.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bubble_right_green.9.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\bubble_right_green.9.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downl.jpg",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\downl.jpg"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_white_bg_selector.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_logo.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\com_facebook_button_login_logo.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_hdfc.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\logo_hdfc.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_card.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\icon_card.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_axis.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\logo_axis.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_delete_black_24dp.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\ic_delete_black_24dp.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\drawable\\messenger_button_blue_bg_selector.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedcorners4.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\roundedcorners4.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\helper_overlay.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\helper_overlay.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\close.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\close.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bubble_left_gray.9.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\bubble_left_gray.9.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedcorner3.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\roundedcorner3.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_visa.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\logo_visa.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_animation.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\notification_animation.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_left_gray.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\chat_left_gray.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\outgoing_bubble.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\outgoing_bubble.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\trash.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\trash.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corners.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\drawable\\rounded_corners.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rect_shape_drop_down.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\rect_shape_drop_down.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image_border.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\drawable\\image_border.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pin_button_selector.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\drawable\\pin_button_selector.xml"
     }
 ]

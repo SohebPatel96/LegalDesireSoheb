@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/grey_200"
+    tools:context="com.example.msp.legaldesire.My_Appointment">
+
+    <ListView
+        android:id="@+id/list_appointments"
+        android:layout_width="match_parent"
+        android:background="@drawable/listview_border"
+        android:dividerHeight="10dp"
+        android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>

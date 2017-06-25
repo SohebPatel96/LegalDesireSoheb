@@ -1,69 +1,74 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:2:1-102:12
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:2:1-109:12
 	package
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:3:5-42
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:5:5-79
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:5:5-79
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:6:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\MSP\.android\build-cache\ed4f497eaa0b46b9eeae0725086e56e5642b4783\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-crash:10.2.6] C:\Users\MSP\.android\build-cache\c39f3e507cc86934e178bb55a7d6da7032c467aa\output\AndroidManifest.xml:18:5-66
+MERGED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\MSP\.android\build-cache\bfb9f0d8c57a7db6e46f2175e500ed2da35e48ba\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\MSP\.android\build-cache\cb2c693cad7c705f78f2f3cfd05af1eca29a1e18\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\MSP\.android\build-cache\71adc603b942c6240b0d0fbc479173b7ff4334d1\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:8:22-77
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:8:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:9:5-81
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:10:5-79
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:10:5-79
 MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\MSP\.android\build-cache\ed4f497eaa0b46b9eeae0725086e56e5642b4783\output\AndroidManifest.xml:19:5-78
+MERGED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:12:5-79
+MERGED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:11:5-79
 MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\MSP\.android\build-cache\bfb9f0d8c57a7db6e46f2175e500ed2da35e48ba\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\MSP\.android\build-cache\cb2c693cad7c705f78f2f3cfd05af1eca29a1e18\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\MSP\.android\build-cache\71adc603b942c6240b0d0fbc479173b7ff4334d1\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:12:5-76
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:12:5-76
+MERGED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:12:22-73
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:12:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:13:5-76
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:13:22-73
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:13:22-73
 uses-permission#com.android.vending.BILLING
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:14:5-67
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:14:5-67
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:14:22-64
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:14:22-64
 application
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:16:5-100:19
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:16:5-107:19
+MERGED from [com.androidmapsextensions:android-maps-extensions:2.4.0] C:\Users\MSP\.android\build-cache\d0235db7d349013270210ec1b8a0239c8ed69a1e\output\AndroidManifest.xml:12:5-20
 MERGED from [com.android.support:design:24.2.1] C:\Users\MSP\.android\build-cache\810c98353e6fa7760499c8fc7d562b1574f9a65b\output\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\MSP\.android\build-cache\ed4f497eaa0b46b9eeae0725086e56e5642b4783\output\AndroidManifest.xml:24:5-19
 MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\MSP\.android\build-cache\5d73fd3ed3b3bf30eeefd2ffd535661cf62a1075\output\AndroidManifest.xml:4:5-19
@@ -74,12 +79,16 @@ MERGED from [com.google.firebase:firebase-auth:10.2.6] C:\Users\MSP\.android\bui
 MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\MSP\.android\build-cache\8880ccb57b6a474743c75508a858eb80e2240359\output\AndroidManifest.xml:18:5-20:19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\MSP\.android\build-cache\4515c7005b38ef29d58cafdbed44d3a0e702edd1\output\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\MSP\.android\build-cache\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\output\AndroidManifest.xml:28:5-48:19
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\3e552eb8cc8ac18fbf3dc7088182c9101fa4823c\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\33b44420c27c939a59f13329232caf6897e8f727\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\MSP\.android\build-cache\22d0dc4862290c8a7a8aaa74b4147645f3243130\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:customtabs:25.3.1] C:\Users\MSP\.android\build-cache\7067472bea985455bf91aace754e5497e3ca99f1\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\MSP\.android\build-cache\1ca7750e595a6ce23bd83fdf3d36ced42e0afb87\output\AndroidManifest.xml:9:5-20
+MERGED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:18:5-39:19
+MERGED from [com.payu.india:payu-sdk:4.4.1] C:\Users\MSP\.android\build-cache\664ca63db569634cdf048baa929fd0d4330444dc\output\AndroidManifest.xml:11:5-12:19
+MERGED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:16:5-23:19
+MERGED from [com.payu.magicretry:magicretry:1.0.5] C:\Users\MSP\.android\build-cache\bf4b689841af6555a056676167e33733739452e8\output\AndroidManifest.xml:11:5-22:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\3e552eb8cc8ac18fbf3dc7088182c9101fa4823c\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\33b44420c27c939a59f13329232caf6897e8f727\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-core:10.2.6] C:\Users\MSP\.android\build-cache\233dec35175c20c04a9a467621395af6dc5e19be\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\MSP\.android\build-cache\bfb9f0d8c57a7db6e46f2175e500ed2da35e48ba\output\AndroidManifest.xml:24:5-33:19
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\MSP\.android\build-cache\cb2c693cad7c705f78f2f3cfd05af1eca29a1e18\output\AndroidManifest.xml:24:5-28:19
@@ -94,157 +103,162 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\MSP\.android\b
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\MSP\.android\build-cache\3dbf106d96ff3f036f2d62f962dcee551bb3c68a\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\MSP\.android\build-cache\32ea018737540e8dd1345e6e0339a6a239764b4a\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:19:9-41
 	android:supportsRtl
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:20:9-35
 	android:windowSoftInputMode
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:22:9-48
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:22:9-48
 	android:allowBackup
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:17:9-35
 	android:icon
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:18:9-43
 	android:theme
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:21:9-40
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:21:9-40
 activity#com.example.msp.legaldesire.Home
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:23:9-32:20
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:23:9-32:20
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:24:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:25:13-49
 	android:theme
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:25:13-44
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:26:13-44
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:23:19-39
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:24:13-33
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:30:27-74
 activity#com.example.msp.legaldesire.OnLoginSuccessful
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:33:9-43:20
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:33:9-43:20
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:34:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:36:13-49
 	android:label
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:36:13-45
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:35:13-45
 	android:theme
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:37:13-56
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:37:13-56
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:35:13-46
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:34:13-46
 intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:38:13-42:29
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:41:17-76
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:41:17-76
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:41:27-73
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:41:27-73
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:45:9-47:69
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:45:9-47:69
 MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\MSP\.android\build-cache\5bc2313c8bce6c6f78525b64ddc4df8f8cb8ec79\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:47:13-66
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:47:13-66
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:46:13-58
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:46:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:48:9-50:71
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:48:9-50:71
 	android:value
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:50:13-68
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:50:13-68
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:49:13-58
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:49:13-58
 activity#com.example.msp.legaldesire.Login
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:52:9-62:20
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:52:9-62:20
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:55:13-49
 	android:label
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:55:13-45
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:54:13-45
 	android:theme
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:56:13-44
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:56:13-44
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:54:13-34
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:53:13-34
 activity#com.example.msp.legaldesire.FullScreenImage
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:63:9-66:51
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:63:9-66:69
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:66:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:65:13-49
 	android:theme
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:65:13-66
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:66:13-66
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:64:13-44
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:64:13-44
 activity#com.example.msp.legaldesire.RegisterMail
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:67:9-68:51
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:67:9-69:52
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:68:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:69:13-49
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:67:19-47
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:68:13-41
 activity#com.example.msp.legaldesire.MailAccount
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:69:9-70:51
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:70:9-72:52
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:70:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:72:13-49
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:69:19-46
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:71:13-40
 activity#com.example.msp.legaldesire.RegisterRegular
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:71:9-72:51
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:73:9-75:52
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:72:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:75:13-49
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:71:19-50
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:74:13-44
 activity#com.example.msp.legaldesire.RegisterLawyer
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:73:9-74:51
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:76:9-78:52
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:74:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:78:13-49
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:73:19-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:77:13-43
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:76:9-78:55
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:80:9-82:55
 	android:value
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:78:13-52
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:82:13-52
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:77:13-58
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:81:13-58
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:80:9-84:51
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:84:9-88:52
 MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\MSP\.android\build-cache\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\output\AndroidManifest.xml:29:9-32:66
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:84:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:88:13-49
 	android:label
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:83:13-45
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:87:13-45
 	android:configChanges
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:82:13-96
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:86:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\MSP\.android\build-cache\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\output\AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:81:13-57
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:85:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:85:9-97:20
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:89:9-101:20
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:88:13-49
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:92:13-49
 	android:exported
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:87:13-36
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:91:13-36
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:86:13-58
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:90:13-58
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:89:13-96:29
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:93:13-100:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:90:17-69
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:94:17-69
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:90:25-66
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:94:25-66
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:93:17-78
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:97:17-78
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:93:27-75
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:97:27-75
 data
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:95:17-75
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:99:17-75
 	android:scheme
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:95:23-72
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:99:23-72
 activity#com.example.msp.legaldesire.Register
-ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:98:9-99:56
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:102:9-105:47
 	android:screenOrientation
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:98:44-80
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:104:13-49
 	android:theme
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:99:13-44
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:105:13-44
 	android:name
-		ADDED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml:98:19-43
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:103:13-37
+activity#com.example.msp.legaldesire.Select_Location
+ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:106:9-62
+	android:name
+		ADDED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml:106:19-50
 uses-sdk
-INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.androidmapsextensions:android-maps-extensions:2.4.0] C:\Users\MSP\.android\build-cache\d0235db7d349013270210ec1b8a0239c8ed69a1e\output\AndroidManifest.xml:8:5-10:146
 MERGED from [com.android.support:design:24.2.1] C:\Users\MSP\.android\build-cache\810c98353e6fa7760499c8fc7d562b1574f9a65b\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\Users\MSP\.android\build-cache\9bf44e0ff8892bd5b6b70a5392581d39c7f34e92\output\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\MSP\.android\build-cache\ed4f497eaa0b46b9eeae0725086e56e5642b4783\output\AndroidManifest.xml:23:5-43
@@ -261,12 +275,16 @@ MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\MSP\.android\build-cac
 MERGED from [com.google.firebase:firebase-storage:10.2.6] C:\Users\MSP\.android\build-cache\7c88a0c10d38cf819d1f6a7480cdba7db89d1173\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-storage-common:10.2.6] C:\Users\MSP\.android\build-cache\df3e0ddd8de86f3c40143d97fe60a678e3834ad2\output\AndroidManifest.xml:3:5-43
 MERGED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\MSP\.android\build-cache\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\output\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\3e552eb8cc8ac18fbf3dc7088182c9101fa4823c\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\33b44420c27c939a59f13329232caf6897e8f727\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\MSP\.android\build-cache\22d0dc4862290c8a7a8aaa74b4147645f3243130\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:customtabs:25.3.1] C:\Users\MSP\.android\build-cache\7067472bea985455bf91aace754e5497e3ca99f1\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\MSP\.android\build-cache\1ca7750e595a6ce23bd83fdf3d36ced42e0afb87\output\AndroidManifest.xml:5:5-7:41
+MERGED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [com.payu.india:payu-sdk:4.4.1] C:\Users\MSP\.android\build-cache\664ca63db569634cdf048baa929fd0d4330444dc\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.payu.magicretry:magicretry:1.0.5] C:\Users\MSP\.android\build-cache\bf4b689841af6555a056676167e33733739452e8\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\3e552eb8cc8ac18fbf3dc7088182c9101fa4823c\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\33b44420c27c939a59f13329232caf6897e8f727\output\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-core:10.2.6] C:\Users\MSP\.android\build-cache\233dec35175c20c04a9a467621395af6dc5e19be\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\MSP\.android\build-cache\bfb9f0d8c57a7db6e46f2175e500ed2da35e48ba\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\MSP\.android\build-cache\cb2c693cad7c705f78f2f3cfd05af1eca29a1e18\output\AndroidManifest.xml:17:5-43
@@ -281,13 +299,13 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\MSP\.android\b
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\MSP\.android\build-cache\3dbf106d96ff3f036f2d62f962dcee551bb3c68a\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\MSP\.android\build-cache\32ea018737540e8dd1345e6e0339a6a239764b4a\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.androidmapsextensions:android-maps-extensions:2.4.0] C:\Users\MSP\.android\build-cache\d0235db7d349013270210ec1b8a0239c8ed69a1e\output\AndroidManifest.xml:10:9-143
 	android:targetSdkVersion
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\MSP\Desktop\LD\LegalDesireSoheb-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android project\MyApplication2\Merge-Prem and Soheb\app\src\main\AndroidManifest.xml
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\MSP\.android\build-cache\ed4f497eaa0b46b9eeae0725086e56e5642b4783\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
@@ -347,11 +365,11 @@ ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\MSP\.andr
 	android:name
 		ADDED from [com.facebook.android:facebook-android-sdk:4.23.0] C:\Users\MSP\.android\build-cache\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\output\AndroidManifest.xml:45:13-70
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\MSP\.android\build-cache\22d0dc4862290c8a7a8aaa74b4147645f3243130\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\MSP\.android\build-cache\7067472bea985455bf91aace754e5497e3ca99f1\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\3e552eb8cc8ac18fbf3dc7088182c9101fa4823c\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\MSP\.android\build-cache\33b44420c27c939a59f13329232caf6897e8f727\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\MSP\.android\build-cache\22d0dc4862290c8a7a8aaa74b4147645f3243130\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:customtabs:25.3.1] C:\Users\MSP\.android\build-cache\7067472bea985455bf91aace754e5497e3ca99f1\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\MSP\.android\build-cache\4c736b78175a13d2aeb57cddfff2b0e4a34ed46f\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\MSP\.android\build-cache\ddb7483ba120201a935093c33990961008972835\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\MSP\.android\build-cache\3aee0cc70aa470eb4476a75b784e8088ac1ff162\output\AndroidManifest.xml:25:5-27:34
@@ -359,9 +377,58 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\MSP\.android\b
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\MSP\.android\build-cache\3dbf106d96ff3f036f2d62f962dcee551bb3c68a\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\MSP\.android\build-cache\32ea018737540e8dd1345e6e0339a6a239764b4a\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\MSP\.android\build-cache\22d0dc4862290c8a7a8aaa74b4147645f3243130\output\AndroidManifest.xml:24:9-31
 	android:name
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\MSP\.android\build-cache\3377e6d7114702ed009251415bebf66090f91656\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\MSP\.android\build-cache\22d0dc4862290c8a7a8aaa74b4147645f3243130\output\AndroidManifest.xml:23:9-47
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:14:5-16:47
+MERGED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:12:5-14:47
+	android:protectionLevel
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:16:9-44
+	android:name
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:15:9-54
+activity#com.payu.payuui.Activity.PayUBaseActivity
+ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:23:9-28:20
+	android:screenOrientation
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:26:13-49
+	android:label
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:25:13-45
+	android:windowSoftInputMode
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:27:13-52
+	android:name
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:24:13-69
+activity#com.payu.payuui.Activity.PaymentsActivity
+ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:29:9-33:20
+	android:screenOrientation
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:32:13-49
+	android:label
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:31:13-60
+	android:name
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:30:13-69
+activity#com.payu.payuui.Activity.OldPaymentActivity
+ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:34:9-38:20
+	android:screenOrientation
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:37:13-49
+	android:label
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:36:13-60
+	android:name
+		ADDED from [Merge-Prem and Soheb:sdkui:unspecified] E:\Android project\MyApplication2\Merge-Prem and Soheb\sdkui\build\intermediates\bundles\default\AndroidManifest.xml:35:13-71
+activity#com.payu.custombrowser.CBActivity
+ADDED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:17:9-20:63
+	android:screenOrientation
+		ADDED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:19:13-49
+	android:windowSoftInputMode
+		ADDED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:20:13-60
+	android:name
+		ADDED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:18:13-61
+service#com.payu.custombrowser.services.SnoozeService
+ADDED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:22:9-81
+	android:name
+		ADDED from [com.payu.custombrowser:payu-custom-browser:6.1.3] C:\Users\MSP\.android\build-cache\a04f25f216ad04df044019b588378848c4d831f0\output\AndroidManifest.xml:22:18-78
+activity#com.payu.magicretry.MainActivity
+ADDED from [com.payu.magicretry:magicretry:1.0.5] C:\Users\MSP\.android\build-cache\bf4b689841af6555a056676167e33733739452e8\output\AndroidManifest.xml:12:9-21:20
+	android:name
+		ADDED from [com.payu.magicretry:magicretry:1.0.5] C:\Users\MSP\.android\build-cache\bf4b689841af6555a056676167e33733739452e8\output\AndroidManifest.xml:12:19-66
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\MSP\.android\build-cache\bfb9f0d8c57a7db6e46f2175e500ed2da35e48ba\output\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\MSP\.android\build-cache\cb2c693cad7c705f78f2f3cfd05af1eca29a1e18\output\AndroidManifest.xml:22:5-67

@@ -1,390 +1,550 @@
 [
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\app_bar_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\nav_header_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item_subheader.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_blue_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_media_custom.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\content_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_layout.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\custom_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_white_small.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_white_large.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_register.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_blue_small.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_room_adapter.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\chat_room_adapter.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_login_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_regular.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_register_regular.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fullscreenimage.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\fullscreenimage.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_profile__lawyer.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\fragment_profile__lawyer.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_text_input_password_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\fragment_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_white_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer__module.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\lawyer__module.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_blue_large.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer__module2.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\lawyer__module2.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mail_account.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_mail_account.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_list_adapter.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\chat_list_adapter.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login_mail.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_login_mail.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search_lawyer.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\search_lawyer.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_chat__module.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\fragment_chat__module.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_lawyer.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_register_lawyer.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_simple.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer_module2_adapter.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\lawyer_module2_adapter.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_room_adapter2.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\chat_room_adapter2.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat__lawyer__profile.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\chat__lawyer__profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home2.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_home2.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_layout_snackbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_media.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_mail.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_register_mail.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_lawyer.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\activity_register_lawyer.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\on_login_successful.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\on_login_successful.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_activity_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_marker.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\custom_marker.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\regular__user__registration.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\regular__user__registration.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_profile__regular.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\fragment_profile__regular.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_account.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\select_account.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_chat__room.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\fragment_chat__room.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\upgrade_user.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\upgrade_user.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item_separator.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_smart_device_dialog_fragment.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_net_banking.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_net_banking.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_smart_device_dialog_fragment.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cb_payments.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\cb_payments.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cb_layout_snooze_slow_user.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\cb_layout_snooze_slow_user.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\register.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\magicretry_main.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\bf4b689841af6555a056676167e33733739452e8\\output\\res\\layout\\magicretry_main.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\appointment__book_lawyer.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\appointment__book_lawyer.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_profile.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_saved_cards.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_saved_cards.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item_header.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_room_adapter3.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\chat_room_adapter3.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer__user_registration.xml",
-        "source": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\src\\main\\res\\layout\\lawyer__user_registration.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_layout.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\custom_layout.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emi_list_item.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\emi_list_item.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_chat__module.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\fragment_chat__module.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_credit_debit.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_credit_debit.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_profile__regular.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\fragment_profile__regular.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wait_for_otp.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\wait_for_otp.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search_lawyer.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\search_lawyer.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bankold.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\bankold.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_emi.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_emi.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\on_login_successful.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\on_login_successful.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bank.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\bank.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\upgrade_user.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\upgrade_user.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mail_account.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_mail_account.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_payu_base.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\activity_payu_base.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_payu_money.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_payu_money.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_chat__room.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\fragment_chat__room.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\date_picker_dialog.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\date_picker_dialog.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_account.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\select_account.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_select__location.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_select__location.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\regular__user__registration.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\regular__user__registration.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_mail.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_register_mail.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_layout_tab_icon.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cb_prog_dialog.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\cb_prog_dialog.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\row.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_room_adapter2.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\chat_room_adapter2.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nb_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\nb_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fullscreenimage.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\fullscreenimage.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_appointment.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\my_appointment.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_room_adapter3.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\chat_room_adapter3.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_ui_header.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\dialog_ui_header.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_pin.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\register_pin.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\appointment__book_lawyer2.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\appointment__book_lawyer2.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer__user_registration.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\lawyer__user_registration.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_room_adapter.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\chat_room_adapter.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_marker.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\custom_marker.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_user_cards.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\layout_user_cards.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_payments.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\activity_payments.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\loading.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\loading.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\app_bar.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home2.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_home2.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\bf4b689841af6555a056676167e33733739452e8\\output\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_appointment_adapter.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\my_appointment_adapter.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer__module.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\lawyer__module.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat__lawyer__profile.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\chat__lawyer__profile.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login_mail.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_login_mail.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer_module2_adapter.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\lawyer_module2_adapter.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_saved_card.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\layout_saved_card.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_temp.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\activity_temp.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\retry_otp.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\retry_otp.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_profile__lawyer.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\fragment_profile__lawyer.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cb_progressdialog.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\cb_progressdialog.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_upi.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_upi.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\page.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\page.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lawyer__module2.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\lawyer__module2.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_regular.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\activity_register_regular.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_cash_card.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_cash_card.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\choose_action.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\choose_action.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_list_adapter.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\src\\main\\res\\layout\\chat_list_adapter.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\upi_helper.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\layout\\upi_helper.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cb_layout_snooze.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\layout\\cb_layout_snooze.xml"
     }
 ]

@@ -1,11 +1,16 @@
 <component name="libraryTable">
   <library name="support-compat-25.3.1">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/32ea018737540e8dd1345e6e0339a6a239764b4a/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/32ea018737540e8dd1345e6e0339a6a239764b4a/output/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.android/build-cache/32ea018737540e8dd1345e6e0339a6a239764b4a/output/res" />
       <root url="jar://$USER_HOME$/.android/build-cache/32ea018737540e8dd1345e6e0339a6a239764b4a/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://D:/Soheb/TimePass/software/SDK/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1-sources.jar!/" />
       <root url="jar://D:/Soheb/TimePass/software/SDK/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1-sources.jar!/" />
     </SOURCES>
   </library>

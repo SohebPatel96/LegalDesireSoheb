@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LegalDesireSoheb-master.iml" filepath="$PROJECT_DIR$/LegalDesireSoheb-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Merge-Prem and Soheb.iml" filepath="$PROJECT_DIR$/Merge-Prem and Soheb.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdkui/sdkui.iml" filepath="$PROJECT_DIR$/sdkui/sdkui.iml" />
     </modules>
   </component>
 </project>

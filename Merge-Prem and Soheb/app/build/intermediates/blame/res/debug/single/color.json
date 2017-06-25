@@ -1,110 +1,130 @@
 [
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\color\\design_error.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_default.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\color\\com_facebook_send_button_text_color.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_seek_thumb.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\color\\design_tint_password_toggle.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_switch_thumb.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\color\\com_facebook_button_text_color.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\color\\common_google_signin_btn_tint.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\color.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\color\\color.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\vpi__light_theme.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\color\\vpi__light_theme.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\button_paynow_color.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\color\\button_paynow_color.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\vpi__dark_theme.xml",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\810c98353e6fa7760499c8fc7d562b1574f9a65b\\output\\res\\color\\design_error.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_switch_track.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\7558b726438ec6c61891e5bd04ca6b0fd0424bc8\\output\\res\\color\\com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
         "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "C:\\Users\\MSP\\Desktop\\LD\\LegalDesireSoheb-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\8880ccb57b6a474743c75508a858eb80e2240359\\output\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\3377e6d7114702ed009251415bebf66090f91656\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\color\\otp_approve_button_color.xml",
+        "source": "C:\\Users\\MSP\\.android\\build-cache\\a04f25f216ad04df044019b588378848c4d831f0\\output\\res\\color\\otp_approve_button_color.xml"
     }
 ]

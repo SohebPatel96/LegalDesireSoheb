@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\citi_launcher.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\mipmap-xxhdpi-v4\\citi_launcher.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\card_icon.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\mipmap-xxhdpi-v4\\card_icon.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\image_cvv.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\mipmap-xxhdpi-v4\\image_cvv.png"
+    },
+    {
+        "merged": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\visa.png",
+        "source": "E:\\Android project\\MyApplication2\\Merge-Prem and Soheb\\sdkui\\build\\intermediates\\bundles\\default\\res\\mipmap-xxhdpi-v4\\visa.png"
+    }
+]

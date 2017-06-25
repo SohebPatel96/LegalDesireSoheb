@@ -30,6 +30,39 @@
         <item>Image</item>
         <item>Document</item>
     </string-array>
+    <string-array name="bank_names">
+        <item>State Bank Of India</item>
+        <item>HDFC</item>
+        <item>CITI</item>
+        <item>ICICI</item>
+        <item>Kotak Mahindra</item>
+        <item>Canara Bank</item>
+        <item>Axis Bank</item>
+        <item>State Bank of Hyderabad</item>
+        <item>State Bank Of Mysore</item>
+        <item>Central Bank of India</item>
+        <item>Yes Bank</item>
+        <item>Bank Of India</item>
+    </string-array>
+    <string-array name="card_types">
+        <item>VISA</item>
+        <item>MASTER</item>
+        <item>MASTERO</item>
+
+    </string-array>
+    <string-array name="check_offer_details_modes">
+        <item>Card number</item>
+        <item>User credential</item>
+        <item>User credential and Card token</item>
+        <item>PG as NB</item>
+        <item>PG as Bank code</item>
+    </string-array>
+    <string-array name="offer_modes">
+        <item>New card</item>
+        <item>Stored card</item>
+        <item>Net Banking</item>
+    </string-array>
+    <attr format="boolean" name="centered"/>
     <attr format="reference" name="constraintSet"/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -122,12 +155,20 @@
         <flag name="basic" value="4"/>
         <flag name="chains" value="8"/>
     </attr>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
     <attr format="string" name="title"/>
+    <attr format="color" name="unselectedColor"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_allow_stacked_button_bar">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -148,6 +189,13 @@
     <color name="amber_A200">#FFD740</color>
     <color name="amber_A400">#FFC400</color>
     <color name="amber_A700">#FFAB00</color>
+    <color name="ame_default_cluster_circle_color_extra_large">#FFFF00ED</color>
+    <color name="ame_default_cluster_circle_color_large">#FFFF0000</color>
+    <color name="ame_default_cluster_circle_color_medium">#FFFFBF00</color>
+    <color name="ame_default_cluster_circle_color_small">#FF008CFF</color>
+    <color name="ame_default_cluster_circle_shadow_color">#8000</color>
+    <color name="ame_default_cluster_text_color">#FFF</color>
+    <color name="ame_default_cluster_text_shadow_color">#000</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -199,9 +247,34 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="cb_background">#f6f6f6</color>
+    <color name="cb_blue_button">#368ecd</color>
+    <color name="cb_blue_button_light">#368ecf</color>
+    <color name="cb_border">#d4dee2</color>
+    <color name="cb_dark_blue_button">#094774</color>
+    <color name="cb_dark_grey">#464646</color>
+    <color name="cb_errorRed">#e40000</color>
+    <color name="cb_grey">#e9e7e7</color>
+    <color name="cb_input_gray">#FFDEE6E6</color>
+    <color name="cb_nb_background">#3A3434</color>
+    <color name="cb_nb_button">#615C5C</color>
+    <color name="cb_otpColor">#368ecd</color>
+    <color name="cb_otpDisabledColor">#7d88b3</color>
+    <color name="cb_otpDisabledTextColor">#bec4d9</color>
+    <color name="cb_otpReceivedColor">#769b12</color>
+    <color name="cb_payu_blue">#368ecd</color>
+    <color name="cb_textColor">#8f8d8d</color>
+    <color name="cb_vpa_enter_vpa">#9b9b9b</color>
+    <color name="cb_vpa_text_background">#f6fcce</color>
+    <color name="cb_vpa_text_border">#dcd36b</color>
+    <color name="cb_vpa_text_highlighter">#00adf2</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#F17A12</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="color_amt_background">#E6E6E6</color>
+    <color name="color_enter_cvv">#9C9C9C</color>
+    <color name="color_paynow_button">#3488C4</color>
+    <color name="color_text_on_card">#404040</color>
     <color name="com_facebook_blue">#3B5998</color>
     <color name="com_facebook_button_background_color">#415dae</color>
     <color name="com_facebook_button_background_color_disabled">#bdc1c9</color>
@@ -272,6 +345,15 @@
     <color name="deep_purple_A200">#7C4DFF</color>
     <color name="deep_purple_A400">#651FFF</color>
     <color name="deep_purple_A700">#6200EA</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>
@@ -399,6 +481,7 @@
     <color name="orange_A200">#FFAB40</color>
     <color name="orange_A400">#FF9100</color>
     <color name="orange_A700">#FF6D00</color>
+    <color name="payu_blue">#368ecd</color>
     <color name="pink_100">#F8BBD0</color>
     <color name="pink_200">#F48FB1</color>
     <color name="pink_300">#F06292</color>
@@ -459,6 +542,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="tabsScrollColor">#3488C4</color>
     <color name="teal_100">#B2DFDB</color>
     <color name="teal_200">#80CBC4</color>
     <color name="teal_300">#4DB6AC</color>
@@ -473,6 +557,14 @@
     <color name="teal_A200">#64FFDA</color>
     <color name="teal_A400">#1DE9B6</color>
     <color name="teal_A700">#00BFA5</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
     <color name="white">#FFFFFF</color>
     <color name="yellow_100">#FFF9C4</color>
     <color name="yellow_200">#FFF59D</color>
@@ -555,6 +647,7 @@
     <declare-styleable name="ButtonBarLayout"><attr format="boolean" name="allowStacking"/></declare-styleable>
     <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="CircleImageView"><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="boolean" name="civ_border_overlay"/><attr format="color" name="civ_fill_color"/></declare-styleable>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/><attr format="dimension" name="scrimVisibleHeightTrigger"/><attr format="integer" name="scrimAnimationDuration"/><attr name="collapsedTitleGravity">
             
             <flag name="top" value="0x30"/>
@@ -696,6 +789,7 @@
         </attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="boolean" name="useCompatPadding"/></declare-styleable>
     <declare-styleable name="FloatingActionButton_Behavior_Layout"><attr format="boolean" name="behavior_autoHide"/></declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers">
             <flag name="none" value="0"/>
@@ -763,6 +857,7 @@
 
 </attr><attr format="reference|string" name="scopeUris"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
+    <declare-styleable name="SnoozeLoaderView"><attr format="boolean" name="startAnimate"/><attr format="color" name="activeBarColor"/><attr format="color" name="inActiveBarColor"/><attr format="dimension" name="barWidth"/><attr format="dimension" name="barHeight"/><attr format="dimension" name="barSpace"/><attr format="integer" name="animationSpeed"/></declare-styleable>
     <declare-styleable name="Spinner"><attr name="android:prompt"/><attr name="popupTheme"/><attr name="android:popupBackground"/><attr name="android:dropDownWidth"/><attr name="android:entries"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="color" name="thumbTint"/><attr name="thumbTintMode">
             
@@ -812,12 +907,21 @@
             
             <enum name="screen" value="15"/>
         </attr></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle">
+            <enum name="none" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="underline" value="2"/>
+        </attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargin"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr format="dimension" name="titleMargins"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr name="contentInsetStartWithNavigation"/><attr name="contentInsetEndWithActions"/><attr format="dimension" name="maxButtonHeight"/><attr name="buttonGravity">
             
             <flag name="top" value="0x30"/>
             
             <flag name="bottom" value="0x50"/>
         </attr><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="logo"/><attr format="string" name="logoDescription"/><attr format="color" name="titleTextColor"/><attr format="color" name="subtitleTextColor"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode">
             
@@ -831,7 +935,9 @@
             
             <enum name="screen" value="15"/>
         </attr></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
+    <declare-styleable name="WaitingDots"><attr format="color" name="dotsColor"/><attr format="integer" name="period"/><attr format="integer" name="jumpHeight"/><attr format="boolean" name="autoplay"/></declare-styleable>
     <declare-styleable name="com_facebook_like_view"><attr format="color" name="com_facebook_foreground_color"/><attr format="string" name="com_facebook_object_id"/><attr name="com_facebook_object_type"><enum name="unknown" value="0"/><enum name="open_graph" value="1"/><enum name="page" value="2"/></attr><attr name="com_facebook_style"><enum name="standard" value="0"/><enum name="button" value="1"/><enum name="box_count" value="2"/></attr><attr name="com_facebook_auxiliary_view_position"><enum name="bottom" value="0"/><enum name="inline" value="1"/><enum name="top" value="2"/></attr><attr name="com_facebook_horizontal_alignment"><enum name="center" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr></declare-styleable>
     <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="com_facebook_confirm_logout"/><attr format="string" name="com_facebook_login_text"/><attr format="string" name="com_facebook_logout_text"/><attr name="com_facebook_tooltip_mode"><enum name="automatic" value="0"/><enum name="display_always" value="1"/><enum name="never_display" value="2"/></attr></declare-styleable>
     <declare-styleable name="com_facebook_profile_picture_view"><attr name="com_facebook_preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="com_facebook_is_cropped"/></declare-styleable>
@@ -911,11 +1017,34 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ame_default_cluster_circle_blur_radius">5dp</dimen>
+    <dimen name="ame_default_cluster_circle_shadow_blur_radius">1dp</dimen>
+    <dimen name="ame_default_cluster_circle_shadow_offset_x">2dp</dimen>
+    <dimen name="ame_default_cluster_circle_shadow_offset_y">2dp</dimen>
+    <dimen name="ame_default_cluster_text_padding">5dp</dimen>
+    <dimen name="ame_default_cluster_text_shadow_blur_radius">1dp</dimen>
+    <dimen name="ame_default_cluster_text_shadow_offset_x">1dp</dimen>
+    <dimen name="ame_default_cluster_text_shadow_offset_y">1dp</dimen>
+    <dimen name="ame_default_cluster_text_size">16dp</dimen>
     <dimen name="card_corner_radius">4dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
+    <dimen name="cb_circle_indicator_outer_radius">4dp</dimen>
+    <dimen name="cb_circle_indicator_radius">3dp</dimen>
+    <dimen name="cb_eight">8dp</dimen>
+    <dimen name="cb_eighteen">18dp</dimen>
+    <dimen name="cb_four">4dp</dimen>
+    <dimen name="cb_fourteenScaled">14sp</dimen>
+    <dimen name="cb_sixteen">16dp</dimen>
+    <dimen name="cb_sixteenScaled">16sp</dimen>
+    <dimen name="cb_thirtysix">36dp</dimen>
+    <dimen name="cb_twelve">12dp</dimen>
+    <dimen name="cb_twelveScaled">12sp</dimen>
+    <dimen name="cb_twentyfour">24dp</dimen>
+    <dimen name="circle_indicator_outer_radius">4dp</dimen>
+    <dimen name="circle_indicator_radius">3dp</dimen>
     <dimen name="com_facebook_auth_dialog_corner_radius">2dp</dimen>
     <dimen name="com_facebook_auth_dialog_corner_radius_oversized">4dp</dimen>
     <dimen name="com_facebook_button_corner_radius">2dp</dimen>
@@ -939,6 +1068,19 @@
     <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
     <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
     <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_text_size">14sp</dimen>
@@ -976,7 +1118,13 @@
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="eighteen">18dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="fourteen">14dp</dimen>
+    <dimen name="fourteenScaled">14sp</dimen>
+    <dimen name="fourtytwo">48dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
@@ -1011,12 +1159,33 @@
     <dimen name="notification_top_pad_large_text">5dp</dimen>
     <dimen name="padding_avg">16dp</dimen>
     <dimen name="padding_big">32dp</dimen>
+    <dimen name="padding_forty">40dp</dimen>
+    <dimen name="padding_forty_one">41dp</dimen>
     <dimen name="padding_min">4dp</dimen>
+    <dimen name="padding_nineteen">19dp</dimen>
+    <dimen name="padding_sixteen">16dp</dimen>
     <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_ten">10dp</dimen>
+    <dimen name="padding_thirty">30dp</dimen>
+    <dimen name="padding_twelve">12dp</dimen>
+    <dimen name="padding_twenty">20dp</dimen>
+    <dimen name="padding_twenty_five">25dp</dimen>
+    <dimen name="padding_twenty_one">21dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="sixteenScaled">16sp</dimen>
     <dimen name="space_avg">16dp</dimen>
     <dimen name="space_big">32dp</dimen>
     <dimen name="space_min">4dp</dimen>
     <dimen name="space_small">8dp</dimen>
+    <dimen name="text_size_fourteen">14sp</dimen>
+    <dimen name="text_size_sixteen">16sp</dimen>
+    <dimen name="text_size_twelve">12sp</dimen>
+    <dimen name="thirtysix">36dp</dimen>
+    <dimen name="thirtytwo">32dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="twelveScaled">12sp</dimen>
+    <dimen name="twentyfour">24dp</dimen>
+    <dimen name="two">2dp</dimen>
     <dimen name="user_icon_height">36dp</dimen>
     <dimen name="user_icon_width">36dp</dimen>
     <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
@@ -1044,9 +1213,17 @@
     <integer name="app_bar_elevation_anim_duration">150</integer>
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="google_play_services_version">10260000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Cancel">Cancel</string>
+    <string name="MR_Error_text">Something Bad Happened!</string>
+    <string name="MR_Tap_retry_text">Tap to Retry</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -1079,15 +1256,120 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="account_info"><u>Account Information:</u></string>
+    <string name="action_exit">Exit</string>
     <string name="action_logout">Logout</string>
+    <string name="action_next">Next</string>
     <string name="action_settings">Settings</string>
     <string name="adding_user_to_db">Adding user to database.</string>
     <string name="app_name">LegalDesire</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="are_you_sure">Are you sure ?</string>
+    <string name="axis_bank">AXIS</string>
+    <string name="bank_prompt">Select your Bank</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="cancel">Cancel</string>
+    <string name="cardType_prompt">Select Card Type</string>
+    <string name="card_number_format">xxxx-xxxx-xxxx-xxxx</string>
+    <string name="cb_ac_debited_twice">* Your account may be debited twice if you retry.</string>
+    <string name="cb_approve_otp">Approve</string>
+    <string name="cb_authenticate_with">Select an option for Faster Payment</string>
+    <string name="cb_b_cancel">Cancel</string>
+    <string name="cb_bank_logo">Bank LOGO</string>
+    <string name="cb_bank_page_loading">Please wait. Bank page is loading..</string>
+    <string name="cb_btn_action">btn_action</string>
+    <string name="cb_btn_text">btn_text</string>
+    <string name="cb_button">Button</string>
+    <string name="cb_cancel">cancel</string>
+    <string name="cb_cancel_transaction">Cancel Transaction</string>
+    <string name="cb_card_not_registered_with_pin">Your card has not been registered for PIN yet. Do you want to continue with PIN?</string>
+    <string name="cb_checkbox">checkbox</string>
+    <string name="cb_choose">choose</string>
+    <string name="cb_confirm_transaction">Confirm Transaction</string>
+    <string name="cb_detect_bank">detectBank</string>
+    <string name="cb_detect_otp">detectOtp</string>
+    <string name="cb_enter_caps_otp">Enter OTP</string>
+    <string name="cb_enter_manually">Enter Manually</string>
+    <string name="cb_enter_otp">enterOTP</string>
+    <string name="cb_enter_otp_c">Enter OTP</string>
+    <string name="cb_enter_pin">enterPIN</string>
+    <string name="cb_error">error</string>
+    <string name="cb_error_title">ERROR_TITLE</string>
+    <string name="cb_find_otp">findOtp</string>
+    <string name="cb_hide">hide</string>
+    <string name="cb_incorrect_OTP_2">incorrectOTP</string>
+    <string name="cb_incorrect_otp_e">Incorrect OTP!</string>
+    <string name="cb_incorrect_password">Incorrect Password</string>
+    <string name="cb_incorrect_pin">incorrectPIN</string>
+    <string name="cb_init">init</string>
+    <string name="cb_nb_image">net banking image</string>
+    <string name="cb_no_internet">NO INTERNET CONNECTIVITY</string>
+    <string name="cb_no_internet_error">"Oops.. something bad happened"</string>
+    <string name="cb_otp">otp</string>
+    <string name="cb_otp_received">OTP Received</string>
+    <string name="cb_password">PASSWORD</string>
+    <string name="cb_password_value">Password</string>
+    <string name="cb_payu_icon">PayU icon</string>
+    <string name="cb_payu_response">payu_response</string>
+    <string name="cb_pin">pin</string>
+    <string name="cb_please_wait">Please Wait</string>
+    <string name="cb_populate_user_id">populate_user_id</string>
+    <string name="cb_powered_by">Powered by</string>
+    <string name="cb_process_otp">process_otp</string>
+    <string name="cb_process_request">Processing Your Request</string>
+    <string name="cb_pwd_btn">pwd_btn</string>
+    <string name="cb_receive_sms">Did you receive a SMS from your bank?</string>
+    <string name="cb_regen_otp">regenerate_otp</string>
+    <string name="cb_regenerate">regenerate</string>
+    <string name="cb_regenerate_otp">Regenerate OTP</string>
+    <string name="cb_regenerate_otp_text">It is taking long.You may…</string>
+    <string name="cb_register">register</string>
+    <string name="cb_register_for_pin">REGISTER FOR PIN</string>
+    <string name="cb_register_option">registerOption</string>
+    <string name="cb_registeration_detail">Enter your registration details</string>
+    <string name="cb_remember_user">Remember User ID</string>
+    <string name="cb_result">result</string>
+    <string name="cb_resuming_transaction">Resuming transaction please wait</string>
+    <string name="cb_retry">retry…</string>
+    <string name="cb_retry_otp">retryOTP</string>
+    <string name="cb_retry_restart">Or you can retry now to restart your transaction.</string>
+    <string name="cb_retry_transaction">Retry Now</string>
+    <string name="cb_show_password">Show password</string>
+    <string name="cb_skip_screen">skipScreen</string>
+    <string name="cb_slow_internet_confirmation">Due to slower internet on your mobile device, we were unable to receive a confirmation from the bank.</string>
+    <string name="cb_slownetwork_status">You are on a slow network that may have caused this transaction to fail. We will notify you when your network is ready to process the transaction.</string>
+    <string name="cb_sms_otp">SMS OTP</string>
+    <string name="cb_snooze">Snooze</string>
+    <string name="cb_snooze_cookie">Cookie</string>
+    <string name="cb_snooze_network_down_message">We were not able to detect a better network to resume the transaction.\nYou may retry in a few minutes.</string>
+    <string name="cb_snooze_network_error">Network Error</string>
+    <string name="cb_snooze_payuid">PAYUID</string>
+    <string name="cb_snooze_phpsessid">PHPSESSID</string>
+    <string name="cb_snooze_retry_anyway">RETRY ANYWAY</string>
+    <string name="cb_snooze_slow_user_warning">Your session is about to expire. Please complete the transaction quickly to avoid failure.</string>
+    <string name="cb_snooze_slow_user_warning_header">Finish Transaction</string>
+    <string name="cb_snooze_try_later">TRY LATER</string>
+    <string name="cb_snooze_verify_api_status">api_status</string>
+    <string name="cb_toggle_field">toggleField</string>
+    <string name="cb_top_arrow">CB arrow</string>
+    <string name="cb_transaction_failed">It seems the bank did not recognize the transaction. You may contact the bank/ merchant for more details.</string>
+    <string name="cb_transaction_failed_debited">Or you can retry now to restart your transaction.</string>
+    <string name="cb_transaction_failed_retry">Or you can retry now to restart your transaction.</string>
+    <string name="cb_transaction_failed_title">Transaction not confirmed</string>
+    <string name="cb_transaction_paused">Transaction Paused</string>
+    <string name="cb_transaction_state_unknown">Transaction State Unknown</string>
+    <string name="cb_transaction_status">Please wait while we confirm this transaction from the bank. We will notify you once the bank confirms the status of your transaction.</string>
+    <string name="cb_transaction_success_msg">We have verified the transaction with the bank. You will now be redirected to the merchant application.</string>
+    <string name="cb_transaction_sucess">Transaction successful!</string>
+    <string name="cb_transaction_verified">Transaction Verified</string>
+    <string name="cb_try_later">Try Later?</string>
+    <string name="cb_use_sms_otp">USE SMS OTP</string>
+    <string name="cb_user_input_confirm_transaction">confirm_transaction</string>
+    <string name="cb_verify_message_received">verify_message_received</string>
+    <string name="cb_waiting_for_otp">Waiting for OTP</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="choose_bank">Choose Your Bank</string>
+    <string name="citi">CITI</string>
+    <string name="close_image">Close helper</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
@@ -1128,10 +1410,18 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="could_not_receive_data">Could not receive data</string>
+    <string name="cvv">CVV</string>
     <string name="default_web_client_id" translatable="false">438950451949-m6p4ulmoei3t2cj2l2h1bk50urhh7t3h.apps.googleusercontent.com</string>
     <string name="email">Email Id</string>
-    <string name="facebook_app_id">139044243326043</string>
-    <string name="fb_login_protocol_scheme">fb139044243326043</string>
+    <string name="enable_one_click_checkout">Enable one click checkout.</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="enter_vpa">Enter VPA</string>
+    <string name="error_fill_vpa">Please fill VPA</string>
+    <string name="error_invalid_vpa">Invalid VPA</string>
+    <string name="expires">Expires:</string>
+    <string name="facebook_app_id">133976753842600</string>
+    <string name="fb_login_protocol_scheme">fb133976753842600</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="firebase_database_url" translatable="false">https://legal-desire-e5f23.firebaseio.com</string>
     <string name="font_family_roboto_light">sans-serif-thin</string>
@@ -1140,30 +1430,59 @@
     <string name="google_app_id" translatable="false">1:438950451949:android:3a61e4287a6b1c08</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCPs32NnzWyFLS_caTwY0BJpf2J6UrcRbc</string>
     <string name="google_storage_bucket" translatable="false">legal-desire-e5f23.appspot.com</string>
+    <string name="hdfc">HDFC</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="helper_image">UPI Helper Image</string>
+    <string name="icici">ICICI</string>
+    <string name="internet_restored">Internet Restored</string>
+    <string name="learn_upi">Learn how UPI works</string>
     <string name="loading">Loading</string>
     <string name="login">Login</string>
     <string name="login_register">New user, tap here to register !</string>
     <string name="logout">Logout</string>
     <string name="messenger_send_button_text">Send</string>
+    <string name="month_format">MM</string>
+    <string name="name_on_card">Name On Card</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="ok">OK</string>
     <string name="paniccenter_info"><u>Enter 5 Emergency Contact Numbers:</u></string>
     <string name="password">Password</string>
+    <string name="pay_now">PAY NOW</string>
     <string name="personal_info"><u>Personal Information:</u></string>
     <string name="please_wait">Please wait...</string>
     <string name="pro_info"><u>Professional Information:</u></string>
+    <string name="redirect_back_to_merchant">Redirecting you back to merchant...</string>
+    <string name="redirection_text">You will be redirected to your banks website to  complete payment</string>
     <string name="register">Register</string>
+    <string name="resuming_your_transaction">Resuming your transaction...</string>
+    <string name="save_card">Save card for faster checkouts.</string>
+    <string name="sbi">SBI</string>
     <string name="search_menu_title">Search</string>
+    <string name="select_bank">Select Other Banks</string>
+    <string name="show_less">Show Less</string>
+    <string name="show_more">Show More</string>
+    <string name="sp_internet_restored_ttl">sp_internet_restored_ttl</string>
     <string name="spinner1">distance</string>
     <string name="spinner2">rating</string>
     <string name="spinner3">type</string>
     <string name="spinner4">Lawyer Type</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_unknown_redirect_to_merchant">The bank could not verify the transaction at this time. Redirecting you back to the merchant...</string>
+    <string name="test">Test</string>
+    <string name="text_enter_cvv">Please enter your CVV</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_payments">PaymentsActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_temp">TempActivity</string>
     <string name="type_a_message">Type a message...</string>
     <string name="user_successfully_added">User successfully added!</string>
     <string name="user_unable_to_add">Unable to add user!</string>
+    <string name="vpa_text">yourname@bankname</string>
+    <string name="vpa_text_less">VPA is your Virtual Payment Address in the format yourname@bankname.</string>
+    <string name="vpa_text_more">VPA is your Virtual Payment Address in the format yourname@bankname.\n\n You can create your VPA from any UPI enabled Bank application or third party application. You need the Bank application installed in your phone to complete this transaction.</string>
+    <string name="year_format">YYYY</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -2543,6 +2862,10 @@
     <style name="TextAppearance.StatusBar.EventContent.Line2" parent=""/>
     <style name="TextAppearance.StatusBar.EventContent.Time" parent=""/>
     <style name="TextAppearance.StatusBar.EventContent.Title" parent=""/>
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
     </style>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
@@ -2605,6 +2928,10 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
@@ -2612,6 +2939,8 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <style name="Widget">
+    </style>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -2763,6 +3092,72 @@
         <item name="passwordToggleDrawable">@drawable/design_ic_visibility</item>
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
     </style>
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="cb_approve_otp" parent="android:Widget.Button">
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">@dimen/cb_fourteenScaled</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+    <style name="cb_edit_text" parent="android:Widget.EditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/cb_edit_text</item>
+    </style>
+    <style name="cb_horizontal_line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/cb_border</item>
+    </style>
+    <style name="cb_image_view">
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="cb_linear_layout">
+        <item name="android:background">@color/cb_background</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="cb_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="cb_relative_layout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/cb_background</item>
+    </style>
+    <style name="cb_text_view" parent="android:Widget.TextView">
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/cb_textColor</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
     <style name="com_facebook_activity_theme" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -2819,6 +3214,15 @@
         <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
         <item name="android:drawableLeft">@null</item>
         <item name="android:textColor">#4b5164</item>
+    </style>
+    <style name="spinner_style">
+    <item name="android:background">@drawable/spinner_bg</item>
+    <item name="android:layout_marginLeft">10dp</item>
+    <item name="android:layout_marginRight">10dp</item>
+    <item name="android:layout_marginBottom">10dp</item>
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingTop">5dp</item>
+    <item name="android:paddingBottom">5dp</item>
     </style>
     <style name="tooltip_bubble_text">
         <item name="android:textColor">@android:color/white</item>

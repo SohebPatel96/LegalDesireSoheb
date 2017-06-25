@@ -9,6 +9,9 @@
         <item
             android:id="@+id/chat_module"
             android:title="Message" />
+        <item
+            android:id="@+id/appointment"
+            android:title="My Appointments" />
 
         <item
             android:id="@+id/logout"

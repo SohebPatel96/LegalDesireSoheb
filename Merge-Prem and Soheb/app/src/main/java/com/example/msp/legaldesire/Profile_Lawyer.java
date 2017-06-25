@@ -87,7 +87,6 @@ public class Profile_Lawyer extends Fragment {
         mContactText = (TextView) view.findViewById(R.id.lawyertxt_contact);
         mCityText = (TextView) view.findViewById(R.id.lawyertxt_location);
         mTypeText = (TextView) view.findViewById(R.id.lawyertxt_type);
-        TextView status=(TextView)view.findViewById(R.id.registeration);
 
 
 
